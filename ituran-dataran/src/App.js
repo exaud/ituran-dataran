@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/navbar'
 import Sidebar from './components/SideBar'
+import Dashboard from './components/Pages/DashBoard'
 import "@fontsource/nunito-sans";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <div className='content-container'>
         <Sidebar/>
+        <Dashboard/>
       </div>
     </div>
   );
