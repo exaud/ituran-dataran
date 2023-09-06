@@ -1,17 +1,25 @@
 import './App.css';
 import Navbar from './components/navbar'
-import Sidebar from './components/SideBar'
-import Dashboard from './components/Pages/DashBoard'
+import Sidebar from './components/sidebar'
+import Home from './components/pages/home'
+import Dashboard from './components/pages/dashboards'
+import Reports from './components/pages/reports'
+import Settings from './components/pages/settings'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import "@fontsource/nunito-sans";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className='content-container'>
-        <Sidebar/>
-        <Dashboard/>
-      </div>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/dashboards/:data' element={<Dashboard />} />
+          <Route path='/reports' element={<Reports />} />
+          <Route path='/settings' element={<Settings />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

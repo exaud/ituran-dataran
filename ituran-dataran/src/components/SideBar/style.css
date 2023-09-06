@@ -103,6 +103,13 @@
     transition: opacity 0.5s;
 }
 
+.sidebar-button-title a {
+    color: inherit;
+    text-decoration: inherit;
+    display: flex;
+    align-items: center;
+}
+
 .sidebar-column:hover .sidebar-button-title {
     opacity: 1;
 }
@@ -136,7 +143,7 @@
     width: 180px;
 }
 
-.sibebar-section-sub-options button {
+.sidebar-sub-button {
     display: grid;
     justify-content: left;
     color: #042b58;
@@ -151,12 +158,20 @@
     border-bottom: 2px solid #ffffff00;
 }
 
-.sibebar-section-sub-options button:hover {
+.current-sub-option {
     color: #042b58;
     background: #f0f7ff;
     border-bottom: 2px solid #3492ff;
 }
 
-.sibebar-section-sub-options p {
+.sidebar-sub-button:hover {
+    color: #042b58;
+    background: linear-gradient(188.32deg, #FFFFFF 55.84%, #F2F4F6 93.62%), linear-gradient(0deg, #D3E7FF, #D3E7FF);
+    border-bottom: 2px solid #D3E7FF;
+}
+
+.sibebar-section-sub-options a {
     margin: 4px auto 4px 8px;
+    color: inherit;
+    text-decoration: inherit;
 }

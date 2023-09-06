@@ -1,29 +1,60 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import HomeIcon from './icons/HomeIcon'
 import DashboardsIcon from './icons/DashboardsIcon'
 import ReportsIcon from './icons/ReportsIcon'
 import SettingsIcon from './icons/SettingsIcon'
+import { Link, useParams, useLocation } from 'react-router-dom'
 import './style.css'
 
-function SideBar({ }) {
+function Sidebar({ }) {
+    const location = useLocation();
     const [buttonSelected, setButtonSelected] = useState(0);
+    const [subButtonSelected, setSubButtonSelected] = useState(0);
     const [hoveringSidebar, setHoveringSidebar] = useState(false);
 
-    function toggleSideBar(state) {
+    useEffect(() => {
+        const path = location.pathname.split('/')
+
+        switch (path[1]) {
+            case '':
+                return setButtonSelected(0)
+            case 'dashboards':
+                setButtonSelected(1)
+                switch (path[2]) {
+                    case 'main-dashboard':
+                        return setSubButtonSelected(0)
+                    case 'vehicle-geo-insights':
+                        return setSubButtonSelected(1)
+                    case 'daily-insights':
+                        return setSubButtonSelected(2)
+                    case 'vehicle-insights':
+                        return setSubButtonSelected(3)
+                    case 'safety-events':
+                        return setSubButtonSelected(4)
+                }
+                return
+            case 'reports':
+                return setButtonSelected(2)
+            case 'settings':
+                return setButtonSelected(3)
+        }
+    });
+
+    function toggleSidebar(state) {
         setHoveringSidebar(state);
     }
 
     return (
         <div className='sidebar-wrapper'>
             <div className='sidebar'>
-                <div className='sidebar-column' onMouseOver={() => toggleSideBar(true)} onMouseOut={() => toggleSideBar(false)}>
+                <div className='sidebar-column' onMouseOver={() => toggleSidebar(true)} onMouseOut={() => toggleSidebar(false)}>
                     <div className='sidebar-container'>
                         <button className='sidebar-button' onClick={() => setButtonSelected(0)}>
                             <div className={`sidebar-button-icon ${buttonSelected === 0 ? " current" : ""}`}>
                                 <HomeIcon className='svg-container' />
                             </div>
                             <div className={`sidebar-button-title ${buttonSelected === 0 ? " current" : ""}`}>
-                                <p>Home</p>
+                                <Link onClick={() => window.location.href = "/"}>Home</Link>
                             </div>
                         </button>
                         <button className='sidebar-button' onClick={() => setButtonSelected(1)}>
@@ -31,25 +62,25 @@ function SideBar({ }) {
                                 <DashboardsIcon className='svg-container' />
                             </div>
                             <div className={`sidebar-button-title ${buttonSelected === 1 ? " current" : ""}`}>
-                                <p>Dashboards</p>
+                                <Link onClick={() => window.location.href = "/dashboards/main-dashboard"}>Dashboards</Link>
                             </div>
                         </button>
                         {buttonSelected === 1 && hoveringSidebar ?
                             <div className='sibebar-section-sub-options'>
-                                <button>
-                                    <p>Main Dashboard</p>
+                                <button className={`sidebar-sub-button ${subButtonSelected === 0 ? " current-sub-option" : ""}`}>
+                                    <Link onClick={() => window.location.href = "/dashboards/main-dashboard"}>Main Dashboard</Link>
                                 </button>
-                                <button>
-                                    <p>Vehicle Geo Insights</p>
+                                <button className={`sidebar-sub-button ${subButtonSelected === 1 ? " current-sub-option" : ""}`}>
+                                    <Link onClick={() => window.location.href = "/dashboards/vehicle-geo-insights"}>Vehicle Geo Insights</Link>
                                 </button>
-                                <button>
-                                    <p>Daily Insights</p>
+                                <button className={`sidebar-sub-button ${subButtonSelected === 2 ? " current-sub-option" : ""}`}>
+                                    <Link onClick={() => window.location.href = "/dashboards/daily-insights"}>Daily Insights</Link>
                                 </button>
-                                <button>
-                                    <p>Vehicle Insights</p>
+                                <button className={`sidebar-sub-button ${subButtonSelected === 3 ? " current-sub-option" : ""}`}>
+                                    <Link onClick={() => window.location.href = "/dashboards/vehicle-insights"}>Vehicle Insights</Link>
                                 </button>
-                                <button>
-                                    <p>Safety Events</p>
+                                <button className={`sidebar-sub-button ${subButtonSelected === 4 ? " current-sub-option" : ""}`}>
+                                    <Link onClick={() => window.location.href = "/dashboards/safety-events"}>Safety Events</Link>
                                 </button>
                             </div>
                             : null}
@@ -58,7 +89,7 @@ function SideBar({ }) {
                                 <ReportsIcon className='svg-container' />
                             </div>
                             <div className={`sidebar-button-title ${buttonSelected === 2 ? " current" : ""}`}>
-                                <p>Reports</p>
+                                <Link onClick={() => window.location.href = "/reports"}>Reports</Link>
                             </div>
                         </button>
                         <button className='sidebar-button' onClick={() => setButtonSelected(3)}>
@@ -66,7 +97,7 @@ function SideBar({ }) {
                                 <SettingsIcon className='svg-container' />
                             </div>
                             <div className={`sidebar-button-title ${buttonSelected === 3 ? " current" : ""}`}>
-                                <p>Settings</p>
+                                <Link onClick={() => window.location.href = "/settings"}>Settings</Link>
                             </div>
                         </button>
                     </div>
@@ -75,4 +106,4 @@ function SideBar({ }) {
         </div>
     );
 }
-export default SideBar
+export default Sidebar
