@@ -1,4 +1,4 @@
-import PageContainer from '../../page-container';
+import PageContainer from '../../pageContainer';
 
 function Dashboards({ }) {
 
