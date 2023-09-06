@@ -1,4 +1,4 @@
-import Sidebar from '../Sidebar';
+import Sidebar from '../sidebar';
 import './style.css'
 
 function PageContainer({ children }) {
