@@ -1,6 +1,5 @@
 import './App.css';
 import Navbar from './components/navbar'
-import Sidebar from './components/sidebar'
 import Home from './components/pages/home'
 import Dashboard from './components/pages/dashboards'
 import Reports from './components/pages/reports'
