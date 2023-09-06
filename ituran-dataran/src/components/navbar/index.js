@@ -78,7 +78,7 @@ function NavBar() {
           </div>
           <div className='navbar-profile'>
             <div className='navbar-profile-picture-container'>
-              <img height={'32px'} width={'32px'} src={'/profile_picture.png'} alt='cannot display'/>
+              <img height={'32px'} width={'32px'} src={process.env.PUBLIC_URL +'/profile_picture.png'} alt='cannot display'/>
             </div>
             <NotificationsIcon className='navbar-profile-options-button' />
           </div>
