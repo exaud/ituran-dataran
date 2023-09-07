@@ -94,6 +94,11 @@
     z-index: 1;
     opacity: 0;
     transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+.sidebar-button:hover .sidebar-button-title {
+    pointer-events: all;
 }
 
 .sidebar-button-title p {
