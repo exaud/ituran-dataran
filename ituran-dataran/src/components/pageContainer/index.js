@@ -1,4 +1,5 @@
 import Sidebar from '../sidebar';
+import ChatBotIcon from './icons/ChatBotIcon';
 import './style.css'
 
 function PageContainer({ children }) {
@@ -7,6 +8,11 @@ function PageContainer({ children }) {
             <Sidebar />
             <div className='content-container'>
                 {children}
+                <div className='chat-bot'>
+                    <div className='chat-bot-container'>
+                        <ChatBotIcon/>
+                    </div>
+                </div>
             </div>
         </div>
     );

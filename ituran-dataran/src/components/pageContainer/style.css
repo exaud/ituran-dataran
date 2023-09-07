@@ -14,3 +14,17 @@
     padding-left: 80px;
     width: 100%;
 }
+
+.chat-bot {
+    position: fixed;
+    bottom: 10px;
+    right: 74.95px;
+}
+
+.chat-bot-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 101.25px;
+    width: 106.05px;
+}
