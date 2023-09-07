@@ -76,19 +76,19 @@ function Sidebar({ }) {
                     {buttonSelected === 1 && hoveringSidebar ?
                         <div className='sibebar-section-sub-options'>
                             <button className={`sidebar-sub-button ${subButtonSelected === 0 ? " current-sub-option" : ""}`}>
-                                <Link onClick={() => window.location.href = "/dashboards/main-dashboard"}>Main Dashboard</Link>
+                                <Link to="/dashboards/main-dashboard">Main Dashboard</Link>
                             </button>
                             <button className={`sidebar-sub-button ${subButtonSelected === 1 ? " current-sub-option" : ""}`}>
-                                <Link onClick={() => window.location.href = "/dashboards/vehicle-geo-insights"}>Vehicle Geo Insights</Link>
+                                <Link to="/dashboards/vehicle-geo-insights">Vehicle Geo Insights</Link>
                             </button>
                             <button className={`sidebar-sub-button ${subButtonSelected === 2 ? " current-sub-option" : ""}`}>
-                                <Link onClick={() => window.location.href = "/dashboards/daily-insights"}>Daily Insights</Link>
+                                <Link to="/dashboards/daily-insights">Daily Insights</Link>
                             </button>
                             <button className={`sidebar-sub-button ${subButtonSelected === 3 ? " current-sub-option" : ""}`}>
-                                <Link onClick={() => window.location.href = "/dashboards/vehicle-insights"}>Vehicle Insights</Link>
+                                <Link to="/dashboards/vehicle-insights">Vehicle Insights</Link>
                             </button>
                             <button className={`sidebar-sub-button ${subButtonSelected === 4 ? " current-sub-option" : ""}`}>
-                                <Link onClick={() => window.location.href = "/dashboards/safety-events"}>Safety Events</Link>
+                                <Link to="/dashboards/safety-events">Safety Events</Link>
                             </button>
                         </div>
                         : null}

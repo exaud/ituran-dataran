@@ -4,7 +4,6 @@ import Logo from './icons/Logo'
 import NotificationsIcon from './icons/NotificationsIcon'
 import UKFlagIcon from './icons/UKFlagIcon'
 import LanguageDropdownIcon from './icons/LanguageDropdownIcon'
-import { BrowserRouter as Router, Link } from 'react-router-dom'
 import './style.css'
 
 function NavBar() {
@@ -27,11 +26,7 @@ function NavBar() {
     <div className='navbar'>
       <div className='navbar-container'>
         <div className='logo-container'>
-          <Router>
-            <Link onClick={() => window.location.href = "/"}>
-              <Logo className='logo' />
-            </Link>
-          </Router>
+          <Logo className='logo' />
           <div className={`dataran-container`}>
             <p className={`dataran-heading`}>Dataran</p>
           </div>
