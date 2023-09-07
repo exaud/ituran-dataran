@@ -3,7 +3,7 @@ import HomeIcon from './icons/HomeIcon'
 import DashboardsIcon from './icons/DashboardsIcon'
 import ReportsIcon from './icons/ReportsIcon'
 import SettingsIcon from './icons/SettingsIcon'
-import { Link, useParams, useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import './style.css'
 
 function Sidebar({ }) {
