@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Router>
+      <Router basename="/ituran-dataran">
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/dashboards/:data' element={<Dashboards />} />
