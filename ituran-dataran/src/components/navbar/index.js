@@ -32,7 +32,7 @@ function NavBar() {
           </div>
         </div>
         <div className='navbar-main-container'>
-          <p className='navbar-date'>{currentDayOfWeek} {currentDay}/{currentMonth}</p>
+          <p className='navbar-date' style={{ fontSize: "100%" }} >{currentDayOfWeek} {currentDay}/{currentMonth}</p>
           <div className='navbar-search'>
             {/* Input Component starts here. We've generated code using MUI Base. See other options in "Component library" dropdown in Settings */}
             <Input

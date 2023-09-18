@@ -9,7 +9,7 @@ import "@fontsource/nunito-sans";
 
 function App() {
   return (
-    <div className="App">
+    <div className="Ituran Dataran">
       <Navbar />
       <Router basename="/ituran-dataran">
         <Routes>
