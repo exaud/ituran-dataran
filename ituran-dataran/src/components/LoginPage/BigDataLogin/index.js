@@ -4,16 +4,11 @@ import UserInput from '../UserInput'
 import PasswordInput from '../PasswordInput'
 import './style.css'
 
-function BigDataLogin(onClick) {
+function BigDataLogin() {
   const [errorMessages, setErrorMessages] = useState({});
-  //Read value from local
+  //Read value from Session
   const value = JSON.parse(window.localStorage.getItem('isSubmitted')) === true ;
-  const [isSubmitted, setIsSubmitted]= useState(value);
-
-  const uname = window.sessionStorage.getItem('userValue')
-  const [userValue, setUserValue] = useState({uname});
-  const pass = window.sessionStorage.getItem('passValue')
-  const [passValue, setPassValue] = useState({pass});
+  const [isSubmitted, setIsSubmitted] = useState(value);
 
   const database = [
     {
@@ -32,6 +27,9 @@ function BigDataLogin(onClick) {
   );
 
   function handleClick(){
+    const uname = window.sessionStorage.getItem('userValue')
+    const pass = window.sessionStorage.getItem('passValue')
+
     // Find user login info
     const userData = database.find((user) => user.username === uname);
     // Compare user info

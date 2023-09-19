@@ -13,25 +13,18 @@ import BigDataLogin from './components/LoginPage/BigDataLogin';
 
 function App() {
   const value = JSON.parse(window.sessionStorage.getItem('isSubmitted')) === true ;
-  const [isSubmitted, setIsSubmitted]= useState(value);
 
-  function handleClick(){
-      setIsSubmitted(true);
-      window.sessionStorage.setItem('isSubmitted', 'true');
-      window.location.reload();
-  }
-
-  function LoginPage(handleClick){
+  function LoginPage(){
     return (
         <div class="loginpage-container">
             <HeroSection></HeroSection>
-            <BigDataLogin onClick={handleClick}></BigDataLogin>
+            <BigDataLogin></BigDataLogin>
         </div> 
     );
   };
 
-  if (!isSubmitted){
-      return (LoginPage(handleClick));
+  if (!value){
+      return (LoginPage());
    }
     else {
       return(
