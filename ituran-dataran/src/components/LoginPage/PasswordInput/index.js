@@ -11,7 +11,7 @@ function PasswordInput() {
 
   const updatePass = event => {
     setPassValue(event.target.value);
-    window.localStorage.setItem('passValue', event.target.value);
+    window.sessionStorage.setItem('passValue', event.target.value);
     //console.log('value is:', event.target.value);
   };
 
@@ -19,7 +19,7 @@ function PasswordInput() {
     <div className={`loginpage-pass-input-card`}>
       <div className={`loginpage-pass-input-field`}>
         <img className={`loginpage-pass-icon-container loginpage-pass-img-content-icon`} />
-        <input className={`loginpage-pass-input-text`} type="password" name="pass" onChange={updatePass} required></input>
+        <input className={`loginpage-pass-input-text`} type="password" name="pass" onChange={updatePass} required>{passValue.value}</input>
       </div>
     </div>
   );

@@ -10,9 +10,9 @@ function BigDataLogin(onClick) {
   const value = JSON.parse(window.localStorage.getItem('isSubmitted')) === true ;
   const [isSubmitted, setIsSubmitted]= useState(value);
 
-  const uname = window.localStorage.getItem('userValue')
+  const uname = window.sessionStorage.getItem('userValue')
   const [userValue, setUserValue] = useState({uname});
-  const pass = window.localStorage.getItem('passValue')
+  const pass = window.sessionStorage.getItem('passValue')
   const [passValue, setPassValue] = useState({pass});
 
   const database = [
@@ -41,7 +41,9 @@ function BigDataLogin(onClick) {
         setErrorMessages({ name: "error", message: errors.error });
       } else {
         setIsSubmitted(true);
-        window.localStorage.setItem('isSubmitted', 'true');
+        window.sessionStorage.setItem('isSubmitted', 'true');
+        window.sessionStorage.removeItem('userValue');
+        window.sessionStorage.removeItem('passValue');
         window.location.reload();
       }
     } else {
@@ -60,7 +62,7 @@ function BigDataLogin(onClick) {
         <UserInput />
         <PasswordInput />
         {/* Button Component starts here. We've generated code using MUI Base. See other options in "Component library" dropdown in Settings */}
-        <Button className="loginpage-login-button" onClick={handleClick} >Login</Button>
+        <Button className="loginpage-login-button" onClick={handleClick}>Login</Button>
         {renderErrorMessage("error")}
       </div>
     </div>

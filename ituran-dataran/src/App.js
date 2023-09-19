@@ -12,12 +12,12 @@ import BigDataLogin from './components/LoginPage/BigDataLogin';
 
 
 function App() {
-  const value = JSON.parse(window.localStorage.getItem('isSubmitted')) === true ;
+  const value = JSON.parse(window.sessionStorage.getItem('isSubmitted')) === true ;
   const [isSubmitted, setIsSubmitted]= useState(value);
 
   function handleClick(){
       setIsSubmitted(true);
-      window.localStorage.setItem('isSubmitted', 'true');
+      window.sessionStorage.setItem('isSubmitted', 'true');
       window.location.reload();
   }
 

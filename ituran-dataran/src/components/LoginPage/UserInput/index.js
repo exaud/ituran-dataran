@@ -10,7 +10,7 @@ function UserInput() {
 
   const updateUser = event => {
     setUserValue(event.target.value);
-    window.localStorage.setItem('userValue', event.target.value);
+    window.sessionStorage.setItem('userValue', event.target.value);
     //console.log('value is:', event.target.value);
   };
 
