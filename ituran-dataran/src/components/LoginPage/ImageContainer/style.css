@@ -1,0 +1,17 @@
+.loginpage-big-image-card {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  margin-top: 22px;
+}
+.loginpage-big-image-container {
+  box-sizing: border-box;
+  display: block;
+  width: 480px;
+  max-width: initial;
+  height: 400px;
+  border: none;
+  object-fit: cover;
+}
+.loginpage-img-content-789c4772 {
+  content: url("https://s3-alpha-sig.figma.com/img/f5f6/8c8e/9379374df30fe847a11f1ed930d19a6d?Expires=1696204800&Signature=DofmsL9I-vqnPNGW8ptfcYm45Txo2ZoNQ4o9lNKE81fbF9iLj8zO8-Ig2uvzhb08KlPoa5kfwke2QqNNIuwJ9Ght-2FC5I7GGbV4xMr-o51~zIQ0qmUkxroNmHASQvfi9ozhxKxH37XNV~s8PNFmLaael7WRQTHh11c9114UHDgM4TJxaXDC-VDOdmiOPL3SsTkvvRcRxEQ4EuTE0Uxs0oPDOwEPIc9JrbnPcNhAK8NWgpYjACzEYQRtV~BGotQTfNaYSxDoAVxe61xDuFamDDrs-n6PG6czx7rZGg0UmTc6AQbghsrVjaciPuA3i2VtQbSMFYRGPVMmX2XAvI1DSg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+}

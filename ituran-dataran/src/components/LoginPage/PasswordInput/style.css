@@ -1,0 +1,43 @@
+.loginpage-pass-input-card {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  padding-right: 2.5px;
+  padding-left: 2.5px;
+}
+.loginpage-pass-input-field {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8.5px 8px;
+  border: 1px solid #e3e2e2;
+  border-radius: 3px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.loginpage-pass-icon-container {
+  box-sizing: border-box;
+  display: block;
+  flex: 0 0 auto;
+  width: 27px;
+  max-width: initial;
+  height: 27px;
+  border: none;
+  object-fit: cover;
+}
+
+.loginpage-pass-input-text{
+  flex: 0 0 auto;
+  margin-left: 4.5px;
+  font: 600 22px Nunito Sans;
+  color: #1c386b;
+  letter-spacing: -0.01em;
+  width: 300px;
+  height: 21px;
+  border: none;
+  align-self: center;
+}
+
+.loginpage-pass-img-content-icon {
+  content: url("https://s3-alpha-sig.figma.com/img/70aa/a4f8/bda80d81be93ddd5ea956571d538797c?Expires=1696204800&Signature=fWhD0oY1eOTCfHDRSOqAfPlGHADzft6X2jbznX5e~Fsemd7zbhE4pBDduQ6cpFJun8ucRbvR3u6S4cqZ6stNboEcEYd057L4eoaa3vlNgeP3fxkckkX9FrR3caZXTEEMADyJIgYaaK-T6-Tbc8zTHoQruBRmjCm3e2vOUCT-uQ3dBW05jmV4dO~sGNw0PPSzNZ6ET7qDAbt4gTKTYWOUp4k2GvA~un0X8biQTuDrxN3fvIdc7rWzW1yc1pM-sUDDD-TPemdsJucA9rXbWokkNVU0Xz7LLqgpg0iyvrPAwfWn0xFbsT48cB8YUV4OJ6qLr8CxIxHCFLl~oKse6hzt5g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+}

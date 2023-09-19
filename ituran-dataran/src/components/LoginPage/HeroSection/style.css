@@ -1,0 +1,54 @@
+.loginpage-dataran-left-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 81px 62px 96px 77px;
+  background: #f6f9fa;
+}
+.loginpage-image-container1 {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.loginpage-dataran-heading-container {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: -1.5px;
+}
+.loginpage-logo-dataran-container1 {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.loginpage-dataran-heading {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  margin-left: 60px;
+  font: 700 20px Nunito Sans;
+  color: black;
+  align-self: end;
+  padding-top: 31px;
+}
+
+.loginpage-logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 34px;
+}
+
+.loginpage-logo {
+  display: flex;
+}
