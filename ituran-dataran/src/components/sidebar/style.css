@@ -173,3 +173,13 @@
     color: inherit;
     text-decoration: inherit;
 }
+
+.sidebar-logo-container {
+    display: flex;
+    align-items: center;
+    padding-left: 41px;
+  }
+  
+.sidebar-logo {
+    display: flex;
+}

@@ -1,7 +1,7 @@
 
 import { useCallback, useState, forwardRef } from 'react'
 import ImageContainer from '../ImageContainer'
-import Logo from './Logo'
+import Logo from '../../Logos/Logo';
 import './style.css'
 
 function HeroSection() {

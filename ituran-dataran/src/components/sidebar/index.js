@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import HomeIcon from './icons/HomeIcon'
+import Logo from '../Logos/Logo'
+import LogoSmall from '../Logos/LogoSmall'
 import DashboardsIcon from './icons/DashboardsIcon'
 import ReportsIcon from './icons/ReportsIcon'
 import SettingsIcon from './icons/SettingsIcon'
@@ -31,12 +32,14 @@ function Sidebar({ }) {
                         return setSubButtonSelected(3)
                     case 'safety-events':
                         return setSubButtonSelected(4)
+                    default:
                 }
                 return
             case 'reports':
                 return setButtonSelected(2)
             case 'settings':
                 return setButtonSelected(3)
+            default:
         }
     });
 
@@ -51,11 +54,12 @@ function Sidebar({ }) {
                     <button className='sidebar-button'>
                         <Link to="/" >
                             <div className='sidebar-button-container'>
-                                <div className={`sidebar-button-icon ${buttonSelected === 0 ? " current" : ""}`}>
-                                    <HomeIcon className='svg-container' />
-                                </div>
-                                <div className={`sidebar-button-title ${buttonSelected === 0 ? " current" : ""}`}>
-                                    <p>Home</p>
+                                <div className={`sidebar-button-icon`}>
+                                    { hoveringSidebar ? 
+                                        <Logo className={`sidebar-logo-container`}/>
+                                        :
+                                        <LogoSmall/>
+                                    }
                                 </div>
                             </div>
                         </Link>

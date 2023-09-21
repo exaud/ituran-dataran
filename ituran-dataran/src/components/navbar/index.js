@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Input } from '@mui/base'
-import Logo from './icons/Logo'
+import Logo from '../Logos/Logo'
 import NotificationsIcon from './icons/NotificationsIcon'
 import UKFlagIcon from './icons/UKFlagIcon'
 import LanguageDropdownIcon from './icons/LanguageDropdownIcon'
