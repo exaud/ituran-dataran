@@ -1,0 +1,42 @@
+.loginpage-user-input-card {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  padding-right: 2.5px;
+  padding-left: 2.5px;
+}
+.loginpage-user-input-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8.5px 8px;
+  border: 1px solid #e3e2e2;
+  border-radius: 3px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.loginpage-user-icon-container {
+  box-sizing: border-box;
+  display: block;
+  width: 24.5px;
+  max-width: initial;
+  height: 27px;
+  border: none;
+  object-fit: cover;
+}
+
+.loginpage-user-input-text {
+  flex: 0 0 auto;
+  margin-left: 4.5px;
+  font: 600 22px Nunito Sans;
+  color: #1c386b;
+  letter-spacing: -0.01em;
+  width: 300px;
+  height: 21px;
+  border: none;
+  align-self: center;
+}
+
+.loginpage-user-img-content-icon {
+  content: url("https://s3-alpha-sig.figma.com/img/447a/9775/cf17fcd2937245565341d1fe4cba7be6?Expires=1696204800&Signature=kI1aUH-geZy4Yiutrx~8I~Q5sDj2d4TMAiLCGpZJFjtDjpgrptbDqwThVHiL9vFecK7eUX20mv0q5Dt1kmqcljpmbTT4YSiWzfdca8nKxkvZuK0OgX46g7P8jCtotE-qZHGWGNebILRLrBIv7KnvriZqmXbrHfSXMMBwjJ59ZpU-aDL63WvTKyDRXl96HYVEeUbdgAOrtnPy2jJ0KJiA9ehzJLPLctvowWos7prRklCtP~H-jyzB80--CV8RYbqXUsIyv3O8ofvR68uVTJzWDvRcyRhEMGs7Sc27o1XslutVsCxH6bfLl~I7rhsPOypuYNNcJLAknJh9pGiXcsQFkQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+}
