@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { Input } from '@mui/base'
-import Logo from '../Logos/Logo'
 import NotificationsIcon from './icons/NotificationsIcon'
 import UKFlagIcon from './icons/UKFlagIcon'
 import LanguageDropdownIcon from './icons/LanguageDropdownIcon'
@@ -25,11 +24,8 @@ function NavBar() {
   return (
     <div className='navbar'>
       <div className='navbar-container'>
-        <div className='logo-container'>
-          <Logo className='logo' />
           <div className={`dataran-container`}>
             <p className={`dataran-heading`}>Dataran</p>
-          </div>
         </div>
         <div className='navbar-main-container'>
           <p className='navbar-date' style={{ fontSize: "100%" }} >{currentDayOfWeek} {currentDay}/{currentMonth}</p>
