@@ -52,10 +52,10 @@ function Sidebar({ }) {
         <div className='sidebar'>
             <div className='sidebar-column' onMouseOver={() => toggleSidebar(true)} onMouseOut={() => toggleSidebar(false)}>
                 <div className='sidebar-container'>
-                    <button className='sidebar-button'>
+                    <button className='sidebar-home-button'>
                         <Link to="/" >
-                            <div className='sidebar-button-container'>
-                                <div className={`sidebar-button-icon`}>
+                            <div className='sidebar-home-button-container'>
+                                <div className={`sidebar-homne-button-icon`}>
                                     { hoveringSidebar ? 
                                         <HomeIcon className={`sidebar-logo-container`}/>
                                         :
@@ -68,7 +68,6 @@ function Sidebar({ }) {
                     <button className='sidebar-button'>
                         <Link to="/dashboards/main-dashboard">
                             <div className='sidebar-button-container'>
-
                                 <div className={`sidebar-button-icon ${buttonSelected === 1 ? " current" : ""}`}>
                                     <DashboardsIcon className='svg-container' />
                                 </div>

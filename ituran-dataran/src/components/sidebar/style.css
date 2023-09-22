@@ -30,7 +30,6 @@
     align-items: stretch;
     justify-content: flex-start;
     padding-top: 30px;
-    padding-bottom: 8.5px;
     border-bottom: 1px solid #e1e0e7;
     width: 100%;
 }
@@ -38,8 +37,7 @@
 .sidebar-button {
     display: flex;
     justify-content: flex-start;
-    padding: 0;
-    margin-bottom: 8px;
+    margin-bottom: 21px;
     background: none;
     border: none;
 }
@@ -48,6 +46,7 @@
     display: flex;
     color: #042b58;
     font: 400 14px Nunito Sans;
+    margin-bottom: 6px;
 }
 
 .sidebar-column .sidebar-button {
@@ -74,13 +73,9 @@
 }
 
 .sidebar-button-icon {
-    height: 46px;
-    max-width: 46px;
     display: grid;
     align-items: center;
     justify-content: center;
-    padding-left: 11px;
-    padding-right: 11px;
     z-index: 2;
 }
 
@@ -89,10 +84,11 @@
     position: absolute;
     left: 16px;
     height: 46px;
-    width: 134px;
-    padding-left: 46px;
+    width: 124px;
+    padding-left: 56px;
     z-index: 1;
     opacity: 0;
+    font-size: 18px;
     transition: opacity 0.5s;
     pointer-events: none;
 }
@@ -122,8 +118,8 @@
     box-sizing: border-box;
     display: flex;
     flex: 0 0 auto;
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
     color: #3492ff;
 }
 
@@ -145,7 +141,7 @@
     display: grid;
     justify-content: left;
     color: #042b58;
-    font: 400 14px Nunito Sans;
+    font: 400 15px Nunito Sans;
     margin-bottom: 6px;
     background: none;
     border: none;
@@ -174,10 +170,36 @@
     text-decoration: inherit;
 }
 
+.sidebar-home-button {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 7px;
+    padding-top: 0px;
+    margin-bottom: 54px;
+    background: none;
+    border: none;
+}
+
+.sidebar-home-button-container {
+    display: flex;
+    font: 400 14px Nunito Sans;
+}
+
+.sidebar-home-button-icon {
+    height: 46px;
+    max-width: 46px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-left: 11px;
+    padding-right: 11px;
+    z-index: 2;
+}
+
 .sidebar-logo-container {
     display: flex;
     align-items: center;
-    padding-left: 41px;
+    padding-left: 30px;
   }
   
 .sidebar-logo {
