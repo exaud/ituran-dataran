@@ -36,10 +36,9 @@
     flex: 0 0 auto;
     font: 700 20px Nunito Sans;
     color: black;
-    padding-left: 120px;
 }
 
-.dataran-heading-hover-sidebar{
+.hover-sidebar{
     padding-left: 120px;
 }
 

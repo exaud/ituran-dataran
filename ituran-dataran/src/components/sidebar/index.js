@@ -8,7 +8,7 @@ import { Link, useLocation } from 'react-router-dom'
 import './style.css'
 
 
-function Sidebar({ hoveringSidebar, onMouseOver}) {
+function Sidebar({hoveringSidebar, onMouseOver}) {
     const location = useLocation();
     const [buttonSelected, setButtonSelected] = useState(0);
     const [subButtonSelected, setSubButtonSelected] = useState(0);

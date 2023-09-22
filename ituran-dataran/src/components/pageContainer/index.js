@@ -15,7 +15,7 @@ function PageContainer({ children }) {
         <div className='page-container'>
             <Sidebar hoveringSidebar={hoveringSidebar} onMouseOver={toggleSidebar}/>
             <div className='content-container'>
-                <NavBar />
+                <NavBar hoveringSidebar={hoveringSidebar}/>
                 <div className='info-container'>
                     {children}
                 </div>

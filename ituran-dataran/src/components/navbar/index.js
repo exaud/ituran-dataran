@@ -5,12 +5,10 @@ import UKFlagIcon from './icons/UKFlagIcon'
 import LanguageDropdownIcon from './icons/LanguageDropdownIcon'
 import './style.css'
 
-function NavBar() {
+function NavBar({hoveringSidebar}) {
   const [currentDayOfWeek, setCurrentDayOfWeek] = useState('');
   const [currentDay, setCurrentDay] = useState('');
   const [currentMonth, setCurrentMonth] = useState('');
-
-  var isHoveringSidebar = JSON.parse(window.localStorage.getItem('hoveringSidebar')) === true ;
 
   useEffect(() => {
     const date = new Date();
@@ -27,7 +25,11 @@ function NavBar() {
     <div className='navbar'>
       <div className='navbar-container'>
         <div className={`dataran-container`}>
-            <p className={`dataran-heading hover-sidebar`}>Dataran</p>  
+          { hoveringSidebar ? 
+            <p className={`dataran-heading hover-sidebar`}>Dataran</p> 
+            :
+            <p className={`dataran-heading`}>Dataran</p> 
+          }
         </div>
         <div className='navbar-main-container'>
           <p className='navbar-date' style={{ fontSize: "100%" }} >{currentDayOfWeek} {currentDay}/{currentMonth}</p>
