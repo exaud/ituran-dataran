@@ -10,6 +10,8 @@ function NavBar() {
   const [currentDay, setCurrentDay] = useState('');
   const [currentMonth, setCurrentMonth] = useState('');
 
+  var isHoveringSidebar = JSON.parse(window.localStorage.getItem('hoveringSidebar')) === true ;
+
   useEffect(() => {
     const date = new Date();
     const options = { weekday: 'long' };
@@ -24,8 +26,8 @@ function NavBar() {
   return (
     <div className='navbar'>
       <div className='navbar-container'>
-          <div className={`dataran-container`}>
-            <p className={`dataran-heading`}>Dataran</p>
+        <div className={`dataran-container`}>
+            <p className={`dataran-heading hover-sidebar`}>Dataran</p>  
         </div>
         <div className='navbar-main-container'>
           <p className='navbar-date' style={{ fontSize: "100%" }} >{currentDayOfWeek} {currentDay}/{currentMonth}</p>
