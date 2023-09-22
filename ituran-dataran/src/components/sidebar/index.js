@@ -8,11 +8,10 @@ import { Link, useLocation } from 'react-router-dom'
 import './style.css'
 
 
-function Sidebar({ }) {
+function Sidebar({ hoveringSidebar, onMouseOver}) {
     const location = useLocation();
     const [buttonSelected, setButtonSelected] = useState(0);
     const [subButtonSelected, setSubButtonSelected] = useState(0);
-    const [hoveringSidebar, setHoveringSidebar] = useState(false);
 
     useEffect(() => {
         const path = location.pathname.split('/')
@@ -44,13 +43,9 @@ function Sidebar({ }) {
         }
     });
 
-    function toggleSidebar(state) {
-        setHoveringSidebar(state);
-    }
-
     return (
         <div className='sidebar'>
-            <div className='sidebar-column' onMouseOver={() => toggleSidebar(true)} onMouseOut={() => toggleSidebar(false)}>
+            <div className='sidebar-column' onMouseOver={() => onMouseOver(true)} onMouseOut={() => onMouseOver(false)}>
                 <div className='sidebar-container'>
                     <button className='sidebar-home-button'>
                         <Link to="/" >
