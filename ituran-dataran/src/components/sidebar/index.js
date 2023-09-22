@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react'
-import Logo from '../Logos/Logo'
-import LogoSmall from '../Logos/LogoSmall'
+import HomeIcon from './icons/HomeIcon'
+import LogoSmall from './icons/LogoSmall'
 import DashboardsIcon from './icons/DashboardsIcon'
 import ReportsIcon from './icons/ReportsIcon'
 import SettingsIcon from './icons/SettingsIcon'
 import { Link, useLocation } from 'react-router-dom'
 import './style.css'
+
 
 function Sidebar({ }) {
     const location = useLocation();
@@ -56,7 +57,7 @@ function Sidebar({ }) {
                             <div className='sidebar-button-container'>
                                 <div className={`sidebar-button-icon`}>
                                     { hoveringSidebar ? 
-                                        <Logo className={`sidebar-logo-container`}/>
+                                        <HomeIcon className={`sidebar-logo-container`}/>
                                         :
                                         <LogoSmall/>
                                     }
