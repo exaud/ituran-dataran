@@ -9,12 +9,12 @@
 .sidebar-column {
     box-sizing: border-box;
     padding-right: 15.5px;
-    padding-left: 15.5px;
+    padding-left: 10.5px;
     background: white;
     border-right: 2px solid #d3e7ff;
     box-shadow: 0px 8px 16px rgba(76, 141, 217, 0.1);
     transition: 0.3s;
-    width: 80px;
+    width: 90px;
     height: 100%;
 }
 
@@ -46,7 +46,6 @@
     display: flex;
     color: #042b58;
     font: 400 14px Nunito Sans;
-    margin-bottom: 6px;
 }
 
 .sidebar-column .sidebar-button {
@@ -88,7 +87,7 @@
     padding-left: 56px;
     z-index: 1;
     opacity: 0;
-    font-size: 18px;
+    font-size: 16px;
     transition: opacity 0.5s;
     pointer-events: none;
 }
@@ -97,10 +96,11 @@
     pointer-events: all;
 }
 
-.sidebar-button-title p {
+.sidebar-button-title {
     display: flex;
     align-items: center;
     color: inherit;
+    padding-bottom: 4px;
 }
 
 .sidebar-column:hover .sidebar-button-title {
@@ -112,15 +112,19 @@
     border-radius: 8px;
     color: white;
     font-weight: 900;
+    margin: auto;
 }
 
 .svg-container {
     box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
     display: flex;
-    flex: 0 0 auto;
-    width: 40px;
-    height: 40px;
+    flex:0 0 auto;
+    width: 50px;
+    height: 50px;
     color: #3492ff;
+
 }
 
 
@@ -173,7 +177,7 @@
 .sidebar-home-button {
     display: flex;
     justify-content: flex-start;
-    padding-left: 7px;
+    padding-left: 13px;
     padding-top: 0px;
     margin-bottom: 54px;
     background: none;
@@ -191,7 +195,7 @@
     display: grid;
     align-items: center;
     justify-content: center;
-    padding-left: 11px;
+    padding-left: 21px;
     padding-right: 11px;
     z-index: 2;
 }
