@@ -9,7 +9,7 @@
 .sidebar-column {
     box-sizing: border-box;
     padding-right: 15.5px;
-    padding-left: 10.5px;
+    padding-left: 15.5px;
     background: white;
     border-right: 2px solid #d3e7ff;
     box-shadow: 0px 8px 16px rgba(76, 141, 217, 0.1);
@@ -121,10 +121,9 @@
     justify-content: center;
     display: flex;
     flex:0 0 auto;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     color: #3492ff;
-
 }
 
 
