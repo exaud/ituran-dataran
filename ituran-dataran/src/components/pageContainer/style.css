@@ -5,7 +5,6 @@
     align-items: flex-start;
     justify-content: flex-start;
     background: #f6f9fa;
-    padding-top: 98px;
     position: relative;
     min-height: 100vh;
 }
@@ -14,6 +13,12 @@
     padding-left: 80px;
     width: 100%;
 }
+
+.info-container {
+    padding-top: 100px;
+    width: 100%;
+}
+
 
 .chat-bot {
     position: fixed;

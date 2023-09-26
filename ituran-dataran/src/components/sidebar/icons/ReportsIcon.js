@@ -1,7 +1,7 @@
 function ReportsIcon({ className }) {
     return (
       <div className={`${className}`}>
-        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" x="0" y="0">
+        <svg width="30" height="30" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" x="0" y="0">
           <g id="heroicons-solid/document-chart-bar" xmlns="http://www.w3.org/2000/svg">
             <g id="Vector_3">
               <path

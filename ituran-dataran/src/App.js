@@ -1,5 +1,4 @@
 import './App.css';
-import Navbar from './components/navbar'
 import Home from './components/pages/home'
 import { useCallback, useState, forwardRef } from 'react'
 import Dashboards from './components/pages/dashboards';
@@ -29,7 +28,6 @@ function App() {
     else {
       return(
         <div className="MainPage">
-        <Navbar />
         <Router basename="/ituran-dataran">
           <Routes>
             <Route path='/' element={<Home />} />

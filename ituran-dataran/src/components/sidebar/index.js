@@ -1,16 +1,17 @@
 import { useEffect, useState } from 'react'
 import HomeIcon from './icons/HomeIcon'
+import LogoSmall from './icons/LogoSmall'
 import DashboardsIcon from './icons/DashboardsIcon'
 import ReportsIcon from './icons/ReportsIcon'
 import SettingsIcon from './icons/SettingsIcon'
 import { Link, useLocation } from 'react-router-dom'
 import './style.css'
 
-function Sidebar({ }) {
+
+function Sidebar({hoveringSidebar, onMouseOver}) {
     const location = useLocation();
     const [buttonSelected, setButtonSelected] = useState(0);
     const [subButtonSelected, setSubButtonSelected] = useState(0);
-    const [hoveringSidebar, setHoveringSidebar] = useState(false);
 
     useEffect(() => {
         const path = location.pathname.split('/')
@@ -31,31 +32,30 @@ function Sidebar({ }) {
                         return setSubButtonSelected(3)
                     case 'safety-events':
                         return setSubButtonSelected(4)
+                    default:
                 }
                 return
             case 'reports':
                 return setButtonSelected(2)
             case 'settings':
                 return setButtonSelected(3)
+            default:
         }
     });
 
-    function toggleSidebar(state) {
-        setHoveringSidebar(state);
-    }
-
     return (
         <div className='sidebar'>
-            <div className='sidebar-column' onMouseOver={() => toggleSidebar(true)} onMouseOut={() => toggleSidebar(false)}>
+            <div className='sidebar-column' onMouseOver={() => onMouseOver(true)} onMouseOut={() => onMouseOver(false)}>
                 <div className='sidebar-container'>
-                    <button className='sidebar-button'>
+                    <button className='sidebar-home-button'>
                         <Link to="/" >
-                            <div className='sidebar-button-container'>
-                                <div className={`sidebar-button-icon ${buttonSelected === 0 ? " current" : ""}`}>
-                                    <HomeIcon className='svg-container' />
-                                </div>
-                                <div className={`sidebar-button-title ${buttonSelected === 0 ? " current" : ""}`}>
-                                    <p>Home</p>
+                            <div className='sidebar-home-button-container'>
+                                <div className={`sidebar-homne-button-icon`}>
+                                    { hoveringSidebar ? 
+                                        <HomeIcon className={`sidebar-logo-container`}/>
+                                        :
+                                        <LogoSmall/>
+                                    }
                                 </div>
                             </div>
                         </Link>
@@ -63,7 +63,6 @@ function Sidebar({ }) {
                     <button className='sidebar-button'>
                         <Link to="/dashboards/main-dashboard">
                             <div className='sidebar-button-container'>
-
                                 <div className={`sidebar-button-icon ${buttonSelected === 1 ? " current" : ""}`}>
                                     <DashboardsIcon className='svg-container' />
                                 </div>

@@ -1,7 +1,6 @@
 .navbar {
-    position: fixed;
+    position: absolute;
     width: 100%;
-    z-index: 10;
 }
 
 .navbar-container {
@@ -9,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     height: 49px;
-    padding: 27px 17px 20px 0px;
+    padding: 27px 87px 20px 0px;
     background: white;
     border-bottom: 2px solid #ccd6eb;
 }
@@ -30,7 +29,6 @@
     height: 30px;
     margin-left: 27px;
     margin-top: 9.5px;
-    padding-left: 40px;
 }
 
 .dataran-heading {
@@ -40,6 +38,9 @@
     color: black;
 }
 
+.hover-sidebar{
+    padding-left: 120px;
+}
 
 .navbar-main-container {
     display: flex;
