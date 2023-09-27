@@ -1,5 +1,5 @@
 .navbar {
-    position: absolute;
+    position: relative;
     width: 100%;
 }
 
@@ -13,28 +13,17 @@
     border-bottom: 2px solid #ccd6eb;
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    margin-left: 34px;
-}
-
-.logo {
-    display: flex;
-}
-
 .dataran-container {
     display: flex;
     align-items: center;
     height: 30px;
     margin-left: 27px;
-    margin-top: 9.5px;
 }
 
 .dataran-heading {
     box-sizing: border-box;
     flex: 0 0 auto;
-    font: 700 20px Nunito Sans;
+    font: bold 23px Nunito Sans;
     color: black;
 }
 
