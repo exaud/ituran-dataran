@@ -1,14 +1,16 @@
-import { useEffect, useState } from 'react'
+import React from 'react';
+import { useState } from 'react'
 import NavBar from '../navbar';
 import Sidebar from '../sidebar';
 import ChatBotIcon from './icons/ChatBotIcon';
 import './style.css'
 
-function PageContainer({ children }) {
+
+function PageContainer(children : any) {
 
     const [hoveringSidebar, setHoveringSidebar] = useState(false);
 
-    function toggleSidebar(state) {
+    function toggleSidebar( state : boolean) {
         setHoveringSidebar(state);
     }
     return (
@@ -22,7 +24,7 @@ function PageContainer({ children }) {
 
                 <div className='chat-bot'>
                     <div className='chat-bot-container'>
-                        <ChatBotIcon/>
+                        <ChatBotIcon />
                     </div>
                 </div>
             </div>

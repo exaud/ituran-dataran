@@ -1,6 +1,11 @@
-function HomeIcon({ className }) {
+import React from "react";
+
+type Props = {
+  className : string,
+}
+function HomeIcon( props : Props) {
   return (
-    <div className={`${className}`}>
+    <div className={`${props.className}`}>
       <svg width="97" height="50" viewBox="0 0 87 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M25.2283 23.9496C26.1591 23.9496 26.9136 23.1945 26.9136 22.2631C26.9136 21.3317 26.1591 20.5767 25.2283 20.5767C24.2975 20.5767 23.543 21.3317 23.543 22.2631C23.543 23.1945 24.2975 23.9496 25.2283 23.9496Z" fill="#97C93D" />
         <path d="M15.2752 6.87682C16.2059 6.87682 16.9605 6.12177 16.9605 5.19037C16.9605 4.25896 16.2059 3.50391 15.2752 3.50391C14.3444 3.50391 13.5898 4.25896 13.5898 5.19037C13.5898 6.12177 14.3444 6.87682 15.2752 6.87682Z" fill="#00A8E3" />

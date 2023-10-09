@@ -1,6 +1,12 @@
-function LanguageDropdownIcon({ className }) {
+import React from "react";
+
+type Props = {
+  className : string,
+}
+
+function LanguageDropdownIcon(props : Props) {
   return (
-    <div className={`${className}`}>
+    <div className={`${props.className}`}>
       <svg fill="none" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" x="0" y="0">
         <g id="icon-wrapper" xmlns="http://www.w3.org/2000/svg">
           <g id="down">

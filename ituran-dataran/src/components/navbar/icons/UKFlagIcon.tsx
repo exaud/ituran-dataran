@@ -1,6 +1,12 @@
-function UKFlagIcon({ className }) {
+import React from "react";
+
+type Props = {
+  className : string,
+}
+
+function UKFlagIcon(props : Props) {
   return (
-    <div className={`${className}`}>
+    <div className={`${props.className}`}>
       <svg fill="none" viewBox="0 0 21 14.1478" xmlns="http://www.w3.org/2000/svg" x="0" y="0">
         <defs>
           <clipPath id="clip2_840_3345" xmlns="http://www.w3.org/2000/svg">

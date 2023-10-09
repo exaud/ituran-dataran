@@ -1,7 +1,8 @@
+import React from 'react';
 import PageContainer from '../../pageContainer';
 import './style.css'
 
-function Home({ }) {
+function Home() {
     return (
         <PageContainer>
             <div className='page-content'>

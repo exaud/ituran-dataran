@@ -1,12 +1,13 @@
 import PageContainer from "../../pageContainer";
+import React from "react";
 
-function Settings({ }) {
+function Reports() {
     return (
         <PageContainer>
             <div>
-                <p>Settings</p>
+                <p>Reports</p>
             </div>
         </PageContainer>
     );
 }
-export default Settings
+export default Reports

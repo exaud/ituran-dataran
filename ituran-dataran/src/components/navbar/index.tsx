@@ -1,3 +1,4 @@
+import React from 'react'
 import { useEffect, useState } from 'react'
 import { Input } from '@mui/base'
 import NotificationsIcon from './icons/NotificationsIcon'
@@ -5,27 +6,30 @@ import UKFlagIcon from './icons/UKFlagIcon'
 import LanguageDropdownIcon from './icons/LanguageDropdownIcon'
 import './style.css'
 
-function NavBar({hoveringSidebar}) {
+type Props = {
+  hoveringSidebar : boolean,
+}
+
+function NavBar(props : Props) {
   const [currentDayOfWeek, setCurrentDayOfWeek] = useState('');
   const [currentDay, setCurrentDay] = useState('');
   const [currentMonth, setCurrentMonth] = useState('');
 
   useEffect(() => {
     const date = new Date();
-    const options = { weekday: 'long' };
-    const currentDayOfWeek = date.toLocaleString('en-US', options);
+    const currentDayOfWeek = date.toLocaleString('en-US', { weekday: 'long' });
     setCurrentDayOfWeek(currentDayOfWeek);
     const currentDay = date.getDate();
-    setCurrentDay(currentDay)
+    setCurrentDay(currentDay.toString())
     const currentMonth = date.getMonth() + 1;
-    setCurrentMonth(currentMonth)
+    setCurrentMonth(currentMonth.toString())
   }, []);
 
   return (
     <div className='navbar'>
       <div className='navbar-container'>
         <div className={`dataran-container`}>
-          { hoveringSidebar ? 
+          { props.hoveringSidebar ? 
             <p className={`dataran-heading hover-sidebar`}>Dataran</p> 
             :
             <p className={`dataran-heading`}>Dataran</p> 

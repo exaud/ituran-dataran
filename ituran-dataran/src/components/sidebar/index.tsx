@@ -1,4 +1,6 @@
+import React from 'react'
 import { useEffect, useState } from 'react'
+// @ts-ignore
 import HomeIcon from './icons/HomeIcon'
 import LogoSmall from './icons/LogoSmall'
 import DashboardsIcon from './icons/DashboardsIcon'
@@ -7,8 +9,12 @@ import SettingsIcon from './icons/SettingsIcon'
 import { Link, useLocation } from 'react-router-dom'
 import './style.css'
 
+type Props = {
+    hoveringSidebar : any,
+    onMouseOver : any,
+  }
 
-function Sidebar({hoveringSidebar, onMouseOver}) {
+function Sidebar( props : Props) {
     const location = useLocation();
     const [buttonSelected, setButtonSelected] = useState(0);
     const [subButtonSelected, setSubButtonSelected] = useState(0);
@@ -45,14 +51,14 @@ function Sidebar({hoveringSidebar, onMouseOver}) {
 
     return (
         <div className='sidebar'>
-            <div className='sidebar-column' onMouseOver={() => onMouseOver(true)} onMouseOut={() => onMouseOver(false)}>
+            <div className='sidebar-column' onMouseOver={() => props.onMouseOver(true)} onMouseOut={() => props.onMouseOver(false)}>
                 <div className='sidebar-container'>
                     <button className='sidebar-home-button'>
                         <Link to="/" >
                             <div className='sidebar-home-button-container'>
                                 <div className={`sidebar-homne-button-icon`}>
-                                    { hoveringSidebar ? 
-                                        <HomeIcon className={`sidebar-logo-container`}/>
+                                    { props.hoveringSidebar ? 
+                                        <HomeIcon className='sidebar-logo-container'/>
                                         :
                                         <LogoSmall/>
                                     }
@@ -72,7 +78,7 @@ function Sidebar({hoveringSidebar, onMouseOver}) {
                             </div>
                         </Link>
                     </button>
-                    {buttonSelected === 1 && hoveringSidebar ?
+                    {buttonSelected === 1 && props.hoveringSidebar ?
                         <div className='sibebar-section-sub-options'>
                             <button className={`sidebar-sub-button ${subButtonSelected === 0 ? " current-sub-option" : ""}`}>
                                 <Link to="/dashboards/main-dashboard">Main Dashboard</Link>

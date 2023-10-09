@@ -1,6 +1,8 @@
-function ChatBotIcon({ className }) {
+import React from "react";
+
+function ChatBotIcon() {
     return (
-        <div className={`${className}`}>
+        <div>
             <svg width="139" height="134" viewBox="0 0 139 110" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_1001_33943)">
                     <circle cx="66" cy="59.2051" r="50" fill="#042B58" />
