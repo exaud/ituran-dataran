@@ -1,31 +1,37 @@
+import React from 'react'
 import { useCallback, useState, forwardRef } from 'react'
 import { Button } from '@mui/base'
 import UserInput from '../UserInput'
 import PasswordInput from '../PasswordInput'
 import './style.css'
 
-function BigDataLogin() {
-  const [errorMessages, setErrorMessages] = useState({});
-  //Read value from Session
-  const value = JSON.parse(window.localStorage.getItem('isSubmitted')) === true ;
-  const [isSubmitted, setIsSubmitted] = useState(value);
 
+function BigDataLogin() {
   const database = [
     {
       username: "test1",
       password: "test1",
     }
   ];
+
+  //Read value from Session
+  const submitedValue = window.sessionStorage.getItem('isSubmitted');
+  
+  const [loginError, setLoginError] = useState('false');
   const errors = {
-    error: "invalid username/password"
+    message: "invalid username/password"
   };
 
-  // Generate JSX code for error message
-  const renderErrorMessage = (name) =>
-  name === errorMessages.name && (
-    <div className="error">{errorMessages.message}</div>
-  );
-
+  function renderErrorMessage() {
+    let error : boolean = loginError === "true";
+    if (error) {
+      return ( <div className="error">{errors.message}</div>);
+    }
+    else {
+      return (<div className="error"></div>);
+    }
+  }
+           
   function handleClick(){
     const uname = window.sessionStorage.getItem('userValue')
     const pass = window.sessionStorage.getItem('passValue')
@@ -36,9 +42,8 @@ function BigDataLogin() {
     if (userData) {
       if (userData.password !== pass) {
         // Invalid password
-        setErrorMessages({ name: "error", message: errors.error });
+        setLoginError("true");
       } else {
-        setIsSubmitted(true);
         window.sessionStorage.setItem('isSubmitted', 'true');
         window.sessionStorage.removeItem('userValue');
         window.sessionStorage.removeItem('passValue');
@@ -46,7 +51,7 @@ function BigDataLogin() {
       }
     } else {
       // Username not found
-      setErrorMessages({ name: "error", message: errors.error });
+      setLoginError("true");
     }
 }
   
@@ -61,7 +66,7 @@ function BigDataLogin() {
         <PasswordInput />
         {/* Button Component starts here. We've generated code using MUI Base. See other options in "Component library" dropdown in Settings */}
         <Button className="loginpage-login-button" onClick={handleClick}>Login</Button>
-        {renderErrorMessage("error")}
+        {renderErrorMessage()}
       </div>
     </div>
   );

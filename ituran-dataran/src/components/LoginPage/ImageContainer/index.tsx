@@ -1,11 +1,12 @@
-import { useCallback, useState, forwardRef } from 'react'
+/* eslint-disable jsx-a11y/alt-text */
+import React from 'react';
 import './style.css'
 
-function ImageContainer() {
-  return (
+
+const ImageContainer = () => ( 
     <div className={`loginpage-big-image-card`}>
       <img className={`loginpage-big-image-container loginpage-img-content-789c4772`} />
     </div>
-  );
-}
+);
+
 export default ImageContainer

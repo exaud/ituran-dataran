@@ -1,5 +1,4 @@
-
-import { useCallback, useState, forwardRef } from 'react'
+import React from 'react';
 import ImageContainer from '../ImageContainer'
 import Logo from './Logo'
 import './style.css'
@@ -9,7 +8,7 @@ function HeroSection() {
     <div className={`loginpage-dataran-left-container`}>
         <div className={`loginpage-dataran-heading-container`}>
           <div className={`loginpage-dataran-logo-container`}>
-            <Logo className='loginpage-logo' />
+            <Logo className="loginpage-logo"  />
           </div>
           <p className={`loginpage-dataran-heading`}>Dataran</p>
         </div>

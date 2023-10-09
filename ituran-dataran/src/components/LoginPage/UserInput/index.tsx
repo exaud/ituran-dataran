@@ -1,14 +1,12 @@
-import { useCallback, useState, forwardRef } from 'react'
+import React from 'react';
+import { useState } from 'react'
 import './style.css'
+
 
 function UserInput() {
   const [userValue, setUserValue] = useState({});
 
-  function getUser() {
-    return this.input.value;
-  }
-
-  const updateUser = event => {
+  const updateUser = (event: React.ChangeEvent<HTMLInputElement>) => {
     setUserValue(event.target.value);
     window.sessionStorage.setItem('userValue', event.target.value);
     //console.log('value is:', event.target.value);
