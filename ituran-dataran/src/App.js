@@ -13,11 +13,12 @@ function App() {
     </div> 
    }
   else {
-      return(
+/*       return(
         <div className="MainPage">
           <MainPage></MainPage>
-        </div>
-      );
+        </div> 
+      );*/
+    return(<div className="MainPage">Entrei</div>); 
   }
 }
 

@@ -5,7 +5,7 @@ import './style.css'
 
 function LoginPage(){
     return (
-        <div>
+        <div className='loginpage-container'>
             <HeroSection></HeroSection>
             <BigDataLogin></BigDataLogin>
         </div> 
