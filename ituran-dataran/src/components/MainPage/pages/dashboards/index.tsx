@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import './style.css'
 
 
+
 function Dashboards() {
     let { data } = useParams();
 

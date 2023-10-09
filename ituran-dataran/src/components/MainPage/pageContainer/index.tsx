@@ -1,10 +1,9 @@
 import React from 'react';
 import { useState } from 'react'
 import NavBar from '../navbar';
-import Sidebar from '../sidebar';
+import SideBar from '../sidebar';
 import ChatBotIcon from './icons/ChatBotIcon';
 import './style.css'
-
 
 function PageContainer(children : any) {
 
@@ -15,7 +14,7 @@ function PageContainer(children : any) {
     }
     return (
         <div className='page-container'>
-            <Sidebar hoveringSidebar={hoveringSidebar} onMouseOver={toggleSidebar}/>
+            <SideBar hoveringSidebar={hoveringSidebar} onMouseOver={toggleSidebar}/>
             <div className='content-container'>
                 <NavBar hoveringSidebar={hoveringSidebar}/>
                 <div className='info-container'>

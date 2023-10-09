@@ -14,7 +14,7 @@ type Props = {
     onMouseOver : any,
   }
 
-function Sidebar( props : Props) {
+function SideBar( props : Props) {
     const location = useLocation();
     const [buttonSelected, setButtonSelected] = useState(0);
     const [subButtonSelected, setSubButtonSelected] = useState(0);
@@ -128,4 +128,4 @@ function Sidebar( props : Props) {
         </div >
     );
 }
-export default Sidebar
+export default SideBar
