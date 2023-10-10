@@ -8,9 +8,11 @@ function App() {
   const value = JSON.parse(window.sessionStorage.getItem('isSubmitted')) === true ;
 
   if (!value){
-    <div className="LoginPage">
-      <LoginPage/>
-    </div> 
+    return(
+      <div className="LoginPage">
+        <LoginPage/>
+      </div>
+    );
    }
   else {
 /*       return(
