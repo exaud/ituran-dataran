@@ -1,23 +1,13 @@
 import React from 'react'
-import Home from './pages/home';
-import Dashboards from './pages/dashboards';
-import Reports from './pages/reports';
-import Settings from './pages/settings';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { RouterProvider } from 'react-router-dom'
 import "@fontsource/nunito-sans";
+import { router } from './Routes/Routes';
 
 
-function MainPage(){
+function MainPage() : JSX.Element {
     return (
         <div>
-            <Router basename="/ituran-dataran">
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/dashboards/:data' element={<Dashboards />} />
-                <Route path='/reports' element={<Reports />} />
-                <Route path='/settings' element={<Settings />} />
-            </Routes>
-            </Router> 
+           <RouterProvider router={router}/>
         </div>
     );
   };

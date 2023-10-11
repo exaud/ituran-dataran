@@ -1,13 +1,11 @@
-import PageContainer from "../../pageContainer";
 import React from "react";
+import './style.css'
 
-function Reports() {
+function Reports() : JSX.Element {
     return (
-        <PageContainer>
-            <div>
+            <div className='page-content'>
                 <p>Reports</p>
             </div>
-        </PageContainer>
     );
 }
 export default Reports

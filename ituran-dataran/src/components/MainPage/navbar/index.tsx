@@ -10,7 +10,7 @@ type Props = {
   hoveringSidebar : boolean,
 }
 
-function NavBar(props : Props) {
+function NavBar(props : Props) : JSX.Element {
   const [currentDayOfWeek, setCurrentDayOfWeek] = useState('');
   const [currentDay, setCurrentDay] = useState('');
   const [currentMonth, setCurrentMonth] = useState('');

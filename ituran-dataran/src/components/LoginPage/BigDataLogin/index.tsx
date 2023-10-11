@@ -1,12 +1,12 @@
 import React from 'react'
-import { useCallback, useState, forwardRef } from 'react'
+import { useState } from 'react'
 import { Button } from '@mui/base'
 import UserInput from '../UserInput'
 import PasswordInput from '../PasswordInput'
 import './style.css'
 
 
-function BigDataLogin() {
+function BigDataLogin() : JSX.Element {
   const database = [
     {
       username: "test1",
@@ -15,7 +15,7 @@ function BigDataLogin() {
   ];
 
   //Read value from Session
-  const submitedValue = window.sessionStorage.getItem('isSubmitted');
+  //const submitedValue = window.sessionStorage.getItem('isSubmitted');
   
   const [loginError, setLoginError] = useState('false');
   const errors = {

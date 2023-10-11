@@ -14,7 +14,7 @@ type Props = {
     onMouseOver : any,
   }
 
-function SideBar( props : Props) {
+function SideBar( props : Props ) : JSX.Element {
     const location = useLocation();
     const [buttonSelected, setButtonSelected] = useState(0);
     const [subButtonSelected, setSubButtonSelected] = useState(0);

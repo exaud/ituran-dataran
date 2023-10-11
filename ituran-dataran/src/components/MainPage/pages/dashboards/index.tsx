@@ -1,11 +1,9 @@
 import React from 'react';
-import PageContainer from '../../pageContainer';
 import { useParams } from 'react-router-dom';
 import './style.css'
 
 
-
-function Dashboards() {
+function Dashboards() : JSX.Element {
     let { data } = useParams();
 
     function renderSwitch(dashboard : any) {
@@ -24,11 +22,9 @@ function Dashboards() {
     }
 
     return (
-        <PageContainer>
             <div className="iframe-wrap">
                 {renderSwitch(data)}
             </div>
-        </PageContainer>
     );
 }
 export default Dashboards

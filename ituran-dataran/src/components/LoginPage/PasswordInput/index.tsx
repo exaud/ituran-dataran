@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react'
 import './style.css'
 
-function PasswordInput() {
+function PasswordInput() : JSX.Element {
 
   const [passValue, setPassValue] = useState({});
 

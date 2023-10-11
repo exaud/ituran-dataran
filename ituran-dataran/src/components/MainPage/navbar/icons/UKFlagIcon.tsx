@@ -4,7 +4,7 @@ type Props = {
   className : string,
 }
 
-function UKFlagIcon(props : Props) {
+function UKFlagIcon(props : Props) : JSX.Element {
   return (
     <div className={`${props.className}`}>
       <svg fill="none" viewBox="0 0 21 14.1478" xmlns="http://www.w3.org/2000/svg" x="0" y="0">

@@ -1,14 +1,11 @@
 import React from 'react';
-import PageContainer from '../../pageContainer';
 import './style.css'
 
-function Home() {
+function Home() : JSX.Element {
     return (
-        <PageContainer>
             <div className='page-content'>
                 <p>Home</p>
             </div>
-        </PageContainer>
     );
 }
 export default Home

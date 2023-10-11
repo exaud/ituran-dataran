@@ -15,12 +15,12 @@ function App() {
     );
    }
   else {
-/*       return(
+       return(
         <div className="MainPage">
-          <MainPage></MainPage>
+          <MainPage/>
         </div> 
-      );*/
-    return(<div className="MainPage">Entrei</div>); 
+      );
+    //return(<div className="MainPage">Entrei</div>); 
   }
 }
 

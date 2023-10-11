@@ -3,7 +3,7 @@ import HeroSection from './HeroSection';
 import BigDataLogin from './BigDataLogin';
 import './style.css'
 
-function LoginPage(){
+function LoginPage() : JSX.Element {
     return (
         <div className='loginpage-container'>
             <HeroSection></HeroSection>

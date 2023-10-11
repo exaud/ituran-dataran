@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './style.css'
 
 
-function UserInput() {
+function UserInput() : JSX.Element {
   const [userValue, setUserValue] = useState({});
 
   const updateUser = (event: React.ChangeEvent<HTMLInputElement>) => {

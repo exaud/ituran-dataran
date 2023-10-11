@@ -4,7 +4,7 @@ type Props = {
   className : string,
 }
 
-function Logo(props : Props) {
+function Logo(props : Props) : JSX.Element {
     return (
       <div className={`${props.className}`}>
         <svg width="150" height="80" viewBox="0 0 87 40" fill="none" xmlns="http://www.w3.org/2000/svg">

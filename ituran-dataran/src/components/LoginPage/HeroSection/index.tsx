@@ -3,7 +3,7 @@ import ImageContainer from '../ImageContainer'
 import Logo from './Logo'
 import './style.css'
 
-function HeroSection() {
+function HeroSection() : JSX.Element {
   return (
     <div className={`loginpage-dataran-left-container`}>
         <div className={`loginpage-dataran-heading-container`}>

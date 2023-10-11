@@ -1,13 +1,11 @@
 import React from "react";
-import PageContainer from "../../pageContainer";
+import './style.css'
 
-function Settings() {
+function Settings() : JSX.Element {
     return (
-        <PageContainer>
-            <div>
-                <p>Settings</p>
-            </div>
-        </PageContainer>
+        <div className='page-content'>
+            <p>Settings</p>
+        </div>
     );
 }
 export default Settings

@@ -4,8 +4,10 @@ import NavBar from '../navbar';
 import SideBar from '../sidebar';
 import ChatBotIcon from './icons/ChatBotIcon';
 import './style.css'
+import { Outlet } from 'react-router';
 
-function PageContainer(children : any) {
+//Need to find the correct type for children
+function PageContainer() : JSX.Element {
 
     const [hoveringSidebar, setHoveringSidebar] = useState(false);
 
@@ -18,7 +20,7 @@ function PageContainer(children : any) {
             <div className='content-container'>
                 <NavBar hoveringSidebar={hoveringSidebar}/>
                 <div className='info-container'>
-                    {children}
+                    <Outlet />
                 </div>
 
                 <div className='chat-bot'>
