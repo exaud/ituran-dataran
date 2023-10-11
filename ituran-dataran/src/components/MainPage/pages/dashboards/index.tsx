@@ -1,24 +1,50 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import './style.css'
+import EmbedReport from './embedReport';
 
 
 function Dashboards() : JSX.Element {
     let { data } = useParams();
+    const reports : string[] = [
+        "fd698f7f-3094-46cd-87f0-e09eddc9b660", 
+    ];
+    let reportNumber = 0;
+    let pageName = "ReportSectionc857173daa1ec4d9cfb4"; //default value
 
-    function renderSwitch(dashboard : any) {
+    function renderSwitch(dashboard : string | undefined) {
+        if (dashboard === undefined || dashboard === null) {
+            return (<p>Variable Undefined</p>);
+        }
+
         switch (dashboard) {
             case 'main-dashboard':
-                return <iframe className="iframe-content" title="Ituran Dataran Reports Clean" height="2000" src="https://app.powerbi.com/view?r=eyJrIjoiYWU4YTYyODEtMWVjZC00NDVjLTllM2MtOTQ4ZGZlZTZlM2RhIiwidCI6IjgxYjZjZTg5LWM3YjktNDM2ZC1hN2MzLWQ5N2ZmN2NkM2ZjMiIsImMiOjl9&pageName=ReportSectionc857173daa1ec4d9cfb4"></iframe>
-            case 'vehicle-geo-insights':
-                return <iframe className="iframe-content" title="Ituran Dataran Reports Clean" height="2000" src="https://app.powerbi.com/view?r=eyJrIjoiYWU4YTYyODEtMWVjZC00NDVjLTllM2MtOTQ4ZGZlZTZlM2RhIiwidCI6IjgxYjZjZTg5LWM3YjktNDM2ZC1hN2MzLWQ5N2ZmN2NkM2ZjMiIsImMiOjl9&pageName=ReportSection6ee02bd568d797d00dc9"></iframe>
-            case 'daily-insights':
+                reportNumber = 0;
+                pageName = "ReportSectionc857173daa1ec4d9cfb4";
+                window.report.setPage(pageName);
+                break;
+            case 'vehicle-geo':
+                reportNumber = 0;
+                pageName = "ReportSection6ee02bd568d797d00dc9";
+                window.report.setPage(pageName);
+                break;
+            case 'safety-events':
+                reportNumber = 0;
+                pageName = "ReportSection03cf3b0476036f7c1eb5";
+                window.report.setPage(pageName);
+                break;
+            case 'macro-dashboard':
+                return <p>Nothing to Display</p>
+            case 'macro-vehicle-geo':
+                return <p>Nothing to Display</p>
+            case 'macro-safety-events':
+                return <p>Nothing to Display</p>
+/*             case 'daily-insights':
                 return <p>Nothing to Display</p>
             case 'vehicle-insights':
-                return <p>Nothing to Display</p>
-            case 'safety-events':
-                return <iframe className="iframe-content" title="Ituran Dataran Reports Clean" height="2000" src="https://app.powerbi.com/view?r=eyJrIjoiYWU4YTYyODEtMWVjZC00NDVjLTllM2MtOTQ4ZGZlZTZlM2RhIiwidCI6IjgxYjZjZTg5LWM3YjktNDM2ZC1hN2MzLWQ5N2ZmN2NkM2ZjMiIsImMiOjl9&pageName=ReportSection03cf3b0476036f7c1eb5"></iframe>
+                return <p>Nothing to Display</p> */
         }
+        return (<EmbedReport reportId={reports[reportNumber]}/>)
     }
 
     return (

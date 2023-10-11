@@ -6,6 +6,7 @@ import Reports from '../pages/reports';
 import Settings from '../pages/settings';
 import PageContainer from '../pageContainer';
 
+
 export const router = createBrowserRouter(
     [
         {
