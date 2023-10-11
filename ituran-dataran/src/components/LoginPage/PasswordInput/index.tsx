@@ -9,7 +9,6 @@ function PasswordInput() : JSX.Element {
   const updatePass = (event: React.ChangeEvent<HTMLInputElement>) => {
     setPassValue(event.target.value);
     window.sessionStorage.setItem('passValue', event.target.value);
-    //console.log('value is:', event.target.value);
   };
 
   return (

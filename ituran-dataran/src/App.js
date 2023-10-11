@@ -20,7 +20,6 @@ function App() {
           <MainPage/>
         </div> 
       );
-    //return(<div className="MainPage">Entrei</div>); 
   }
 }
 

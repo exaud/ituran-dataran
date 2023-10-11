@@ -13,10 +13,7 @@ function BigDataLogin() : JSX.Element {
       password: "test1",
     }
   ];
-
-  //Read value from Session
-  //const submitedValue = window.sessionStorage.getItem('isSubmitted');
-  
+ 
   const [loginError, setLoginError] = useState('false');
   const errors = {
     message: "invalid username/password"

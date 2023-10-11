@@ -6,7 +6,7 @@ import ChatBotIcon from './icons/ChatBotIcon';
 import './style.css'
 import { Outlet } from 'react-router';
 
-//Need to find the correct type for children
+
 function PageContainer() : JSX.Element {
 
     const [hoveringSidebar, setHoveringSidebar] = useState(false);

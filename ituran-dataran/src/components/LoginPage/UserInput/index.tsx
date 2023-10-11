@@ -9,7 +9,6 @@ function UserInput() : JSX.Element {
   const updateUser = (event: React.ChangeEvent<HTMLInputElement>) => {
     setUserValue(event.target.value);
     window.sessionStorage.setItem('userValue', event.target.value);
-    //console.log('value is:', event.target.value);
   };
 
   return (
