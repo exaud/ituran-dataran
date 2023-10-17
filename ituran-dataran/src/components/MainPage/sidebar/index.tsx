@@ -93,10 +93,10 @@ function SideBar( props : Props ) : JSX.Element {
                                 <Link to="/dashboards/macro-dashboard">Macro Dashboard</Link>
                             </button>
                             <button className={`sidebar-sub-button ${subButtonSelected === 2 ? " current-sub-option" : ""}`}>
-                                <Link to="/dashboards/vehicle-geo">Vehicle Geo</Link>
+                                <Link to="/dashboards/vehicle-geo">Vehicle Geo Insights</Link>
                             </button>
                             <button className={`sidebar-sub-button ${subButtonSelected === 3 ? " current-sub-option" : ""}`}>
-                                <Link to="/dashboards/macro-geo">Macro Geo</Link>
+                                <Link to="/dashboards/macro-geo">Macro Geo Insights</Link>
                             </button>
                             <button className={`sidebar-sub-button ${subButtonSelected === 4 ? " current-sub-option" : ""}`}>
                                 <Link to="/dashboards/safety-events">Safety Events</Link>
