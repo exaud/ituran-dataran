@@ -1,13 +1,10 @@
 import React from 'react';
-import { useState } from 'react'
 import './style.css'
 
 
 function UserInput() : JSX.Element {
-  const [userValue, setUserValue] = useState({});
 
   const updateUser = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setUserValue(event.target.value);
     window.sessionStorage.setItem('userValue', event.target.value);
   };
 

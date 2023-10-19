@@ -19,6 +19,7 @@ function SideBar( props : Props ) : JSX.Element {
     const [buttonSelected, setButtonSelected] = useState(0);
     const [subButtonSelected, setSubButtonSelected] = useState(0);
 
+
     useEffect(() => {
         const path = location.pathname.split('/')
 
@@ -40,11 +41,12 @@ function SideBar( props : Props ) : JSX.Element {
                         return setSubButtonSelected(4)
                     case 'macro-safety-events':
                         return setSubButtonSelected(5)
-/*                     case 'daily-insights':
+                    case 'trip-insights':
                         return setSubButtonSelected(6)
+/*                     case 'daily-insights':
+                        return setSubButtonSelected(7)
                     case 'vehicle-insights':
-                        return setSubButtonSelected(7) */
-                    default:
+                        return setSubButtonSelected(8) */
                 }
                 return
             case 'reports':
@@ -53,7 +55,8 @@ function SideBar( props : Props ) : JSX.Element {
                 return setButtonSelected(3)
             default:
         }
-    });
+    },
+    [location.pathname]);
 
     return (
         <div className='sidebar'>
@@ -103,6 +106,9 @@ function SideBar( props : Props ) : JSX.Element {
                             </button>
                             <button className={`sidebar-sub-button ${subButtonSelected === 5 ? " current-sub-option" : ""}`}>
                                 <Link to="/dashboards/macro-safety-events">Macro Safety Events</Link>
+                            </button>
+                            <button className={`sidebar-sub-button ${subButtonSelected === 6 ? " current-sub-option" : ""}`}>
+                                <Link to="/dashboards/trip-insights">Trip Insights</Link>
                             </button>
 {/*                             <button className={`sidebar-sub-button ${subButtonSelected === 6 ? " current-sub-option" : ""}`}>
                                 <Link to="/dashboards/daily-insights">Daily Insights</Link>

@@ -1,13 +1,9 @@
 import React from 'react';
-import { useState } from 'react'
 import './style.css'
 
 function PasswordInput() : JSX.Element {
 
-  const [passValue, setPassValue] = useState({});
-
   const updatePass = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setPassValue(event.target.value);
     window.sessionStorage.setItem('passValue', event.target.value);
   };
 
