@@ -14,6 +14,8 @@ type Props = {
     onMouseOver : any,
   }
 
+//Tentar criar um stae aqui que indica a pagina? depois criar outro state para indicar o report
+
 function SideBar( props : Props ) : JSX.Element {
     const location = useLocation();
     const [buttonSelected, setButtonSelected] = useState(0);
