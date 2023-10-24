@@ -40,4 +40,5 @@
 
 .loginpage-pass-img-content-icon {
   content: url("https://s3-alpha-sig.figma.com/img/d502/199b/05cb928af7f508a67ac674e86f799d68?Expires=1698624000&Signature=PspBiQAfqrx10mJNTRUJWnDf297gIIYdP4r8AF0rOLPiTtaFN3c6viFWBR1MqCYQr3crp6IPBR5szyLkYLsi7lswTh6W6oe9EGuVVNWGut-NRze~ah8wd1gEBsCYW18lDgGaZ7dvgre-7mhO3KO3zkeHfLRpKE0-QGI5EsV3bwWy16RdaMo5xDPal126bydZPrJklmTx11LCvvjx1T5b4LOF4SF8PHf62JAD4EEz94tfKUyPLthO2KW61pVbJmGJaX~F-PvRiRk9HbyGsvm5IbwuW6H5mZ-wo-McV4zt2CamMOL2flDDxZ4YJYF~AFNyJrZFt1u-iSrUwrjGZzjfZQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+  transform: scaleX(-1);
 }
