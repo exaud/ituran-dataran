@@ -56,7 +56,7 @@ function SideBar( props : Props ) : JSX.Element {
                 return setButtonSelected(3)
             default:
         }
-    });
+    }, [location.pathname]);
 
     return (
         <div className='sidebar'>
