@@ -100,14 +100,14 @@ function SideBar( props : Props ) : JSX.Element {
                             <button className={`sidebar-sub-button ${subButtonSelected === 3 ? " current-sub-option" : ""}`}>
                                 <Link to="/dashboards/macro-geo">Macro Geo Insights</Link>
                             </button>
+                            <button className={`sidebar-sub-button ${subButtonSelected === 6 ? " current-sub-option" : ""}`}>
+                                <Link to="/dashboards/trip-insights">Trip Insights</Link>
+                            </button>
                             <button className={`sidebar-sub-button ${subButtonSelected === 4 ? " current-sub-option" : ""}`}>
                                 <Link to="/dashboards/safety-events">Safety Events</Link>
                             </button>
                             <button className={`sidebar-sub-button ${subButtonSelected === 5 ? " current-sub-option" : ""}`}>
                                 <Link to="/dashboards/macro-safety">Macro Safety Events</Link>
-                            </button>
-                            <button className={`sidebar-sub-button ${subButtonSelected === 6 ? " current-sub-option" : ""}`}>
-                                <Link to="/dashboards/trip-insights">Trip Insights</Link>
                             </button>
 {/*                             <button className={`sidebar-sub-button ${subButtonSelected === 7 ? " current-sub-option" : ""}`}>
                                 <Link to="/dashboards/daily-insights">Daily Insights</Link>

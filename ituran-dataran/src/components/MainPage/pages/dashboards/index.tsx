@@ -21,7 +21,7 @@ function Dashboards() : JSX.Element {
             case 'macro-safety':
                 return <iframe className="iframe-content" title="Ituran Dataran Reports Clean" height="2000" src="https://app.powerbi.com/view?r=eyJrIjoiNGZkYTMwMjUtODBjNi00YzliLWEyNTYtMmM4ZTE3NTQ2OWNhIiwidCI6IjgxYjZjZTg5LWM3YjktNDM2ZC1hN2MzLWQ5N2ZmN2NkM2ZjMiIsImMiOjl9&pageName=ReportSection03cf3b0476036f7c1eb5"></iframe>
             case 'trip-insights':
-                return <p>Nothing to Display</p>
+                return <iframe className="iframe-content" title="Ituran Dataran Reports Clean" height="2000" src="https://app.powerbi.com/view?r=eyJrIjoiNGZkYTMwMjUtODBjNi00YzliLWEyNTYtMmM4ZTE3NTQ2OWNhIiwidCI6IjgxYjZjZTg5LWM3YjktNDM2ZC1hN2MzLWQ5N2ZmN2NkM2ZjMiIsImMiOjl9&pageName=ReportSection8810b5e2c6545020f7ad"></iframe>
 /*             case 'daily-insights':
                 return <p>Nothing to Display</p>
             case 'vehicle-insights':
