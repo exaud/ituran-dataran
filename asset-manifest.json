@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ituran-dataran/static/css/main.59b1ff48.css",
+    "main.css": "/ituran-dataran/static/css/main.f5d0e015.css",
     "main.js": "/ituran-dataran/static/js/main.b62457d5.js",
     "static/js/787.9b9b9767.chunk.js": "/ituran-dataran/static/js/787.9b9b9767.chunk.js",
     "static/media/nunito-sans-latin-ext-400-normal.woff": "/ituran-dataran/static/media/nunito-sans-latin-ext-400-normal.3616c6e04cfeaa7e3068.woff",
@@ -14,12 +14,12 @@
     "static/media/nunito-sans-cyrillic-400-normal.woff2": "/ituran-dataran/static/media/nunito-sans-cyrillic-400-normal.f8b450dc961b6de9d239.woff2",
     "static/media/nunito-sans-vietnamese-400-normal.woff2": "/ituran-dataran/static/media/nunito-sans-vietnamese-400-normal.170e94e9f869d539e5fd.woff2",
     "index.html": "/ituran-dataran/index.html",
-    "main.59b1ff48.css.map": "/ituran-dataran/static/css/main.59b1ff48.css.map",
+    "main.f5d0e015.css.map": "/ituran-dataran/static/css/main.f5d0e015.css.map",
     "main.b62457d5.js.map": "/ituran-dataran/static/js/main.b62457d5.js.map",
     "787.9b9b9767.chunk.js.map": "/ituran-dataran/static/js/787.9b9b9767.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.59b1ff48.css",
+    "static/css/main.f5d0e015.css",
     "static/js/main.b62457d5.js"
   ]
 }
