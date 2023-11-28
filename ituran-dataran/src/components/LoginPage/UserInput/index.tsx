@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react'
 import './style.css'
+import UserLoginIcon from './userLoginIcon.png'
 
 
 function UserInput() : JSX.Element {
@@ -14,7 +15,7 @@ function UserInput() : JSX.Element {
   return (
     <div className={`loginpage-user-input-card`}>
       <div className={`loginpage-user-input-container`}>
-        <img className={`loginpage-user-icon-container loginpage-user-img-content-icon`} />
+        <img src={UserLoginIcon} className={`loginpage-user-icon`} loading='lazy' alt='user login icon'/>
         <input className={`loginpage-user-input-text`} type="text" name="uname" onChange={updateUser} required></input>
       </div>
     </div>
