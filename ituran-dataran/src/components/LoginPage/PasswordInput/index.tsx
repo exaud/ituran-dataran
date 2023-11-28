@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react'
 import './style.css'
+import PasswordLoginIcon from './passwordLoginIcon.png'
 
 function PasswordInput() : JSX.Element {
 
@@ -14,7 +15,7 @@ function PasswordInput() : JSX.Element {
   return (
     <div className={`loginpage-pass-input-card`}>
       <div className={`loginpage-pass-input-field`}>
-        <img className={`loginpage-pass-icon-container loginpage-pass-img-content-icon`} />
+        <img src={PasswordLoginIcon} className={`loginpage-pass-icon`} loading='lazy' alt='password login icon'/>
         <input className={`loginpage-pass-input-text`} type="password" name="pass" onChange={updatePass} required></input>
       </div>
     </div>

@@ -25,7 +25,6 @@
   border: none;
   object-fit: cover;
 }
-
 .loginpage-pass-input-text{
   flex: 0 0 auto;
   margin-left: 4.5px;
@@ -37,8 +36,6 @@
   border: none;
   align-self: center;
 }
-
-.loginpage-pass-img-content-icon {
-  content: url("https://s3-alpha-sig.figma.com/img/d502/199b/05cb928af7f508a67ac674e86f799d68?Expires=1699833600&Signature=a9xtecZG06AivM1zjKtiVXvLf0iRqJJk1vymBKY1JRyl0Ynm60-iF46tXRBZThity0DvpR5IRDAsOKkXBj6ak5ryau3LgIkdL2CD8gmwU-H7cH9IqcxvtUgZdchSKfhuEt2QhJhKgOulU1ZE~YmKMPxr8fn2b23r6IwOuMy7D4uZKASiYhfBE-6zkKEZFfumii9fqe6EJ~QpBUofNxVsf9XS1G0y92xv6fbINLOgk4tZHygrhxqQ3AQa6HziEOnh~Z6hfe7Df2JwXS9UnO-HBUjFiprRwtlmPvea5EMzr7pbuHEiPwYmU-61OlIpfbb9Y7jRCFdztuZtKcaOxmYhow__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
-  transform: scaleX(-1);
+.loginpage-pass-icon{
+  height: 40px;  
 }
