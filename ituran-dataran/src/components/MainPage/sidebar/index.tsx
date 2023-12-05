@@ -42,7 +42,8 @@ function SideBar( props : Props ) : JSX.Element {
                         return setSubButtonSelected(5)
                     case 'macro-safety':
                         return setSubButtonSelected(6)
-
+                    case 'vehicle-distribution':
+                        return setSubButtonSelected(7)
 /*                     case 'daily-insights':
                             return setSubButtonSelected(7)
                     case 'vehicle-insights':
@@ -110,10 +111,10 @@ function SideBar( props : Props ) : JSX.Element {
                             <button className={`sidebar-sub-button ${subButtonSelected === 6 ? " current-sub-option" : ""}`}>
                                 <Link to="/dashboards/macro-safety">Macro Safety Events</Link>
                             </button>
-{/*                             <button className={`sidebar-sub-button ${subButtonSelected === 7 ? " current-sub-option" : ""}`}>
-                                <Link to="/dashboards/daily-insights">Daily Insights</Link>
+                             <button className={`sidebar-sub-button ${subButtonSelected === 7 ? " current-sub-option" : ""}`}>
+                                <Link to="/dashboards/vehicle-distribution">Vehicle Distribution</Link>
                             </button>
-                            <button className={`sidebar-sub-button ${subButtonSelected === 8 ? " current-sub-option" : ""}`}>
+{/*                            <button className={`sidebar-sub-button ${subButtonSelected === 8 ? " current-sub-option" : ""}`}>
                                 <Link to="/dashboards/vehicle-insights">Vehicle Insights</Link>
                             </button> */}
                         </div>
