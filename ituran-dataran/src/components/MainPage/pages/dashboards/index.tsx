@@ -22,9 +22,9 @@ function Dashboards() : JSX.Element {
                 return <iframe className="iframe-content" title="Ituran Dataran Reports" src="https://app.powerbi.com/view?r=eyJrIjoiNGZkYTMwMjUtODBjNi00YzliLWEyNTYtMmM4ZTE3NTQ2OWNhIiwidCI6IjgxYjZjZTg5LWM3YjktNDM2ZC1hN2MzLWQ5N2ZmN2NkM2ZjMiIsImMiOjl9&pageName=ReportSection03cf3b0476036f7c1eb5"></iframe>
             case 'trip-insights':
                 return <iframe className="iframe-content" title="Ituran Dataran Reports" src="https://app.powerbi.com/view?r=eyJrIjoiNGZkYTMwMjUtODBjNi00YzliLWEyNTYtMmM4ZTE3NTQ2OWNhIiwidCI6IjgxYjZjZTg5LWM3YjktNDM2ZC1hN2MzLWQ5N2ZmN2NkM2ZjMiIsImMiOjl9&pageName=ReportSection8810b5e2c6545020f7ad"></iframe>
-/*             case 'daily-insights':
-                return <p>Nothing to Display</p>
-            case 'vehicle-insights':
+            case 'vehicle-distribution':
+                return <iframe className="iframe-content" title="Ituran Dataran Reports" src="https://app.powerbi.com/view?r=eyJrIjoiOGQxYWM4ZGQtMGI3Zi00OGMwLTliNmEtNTRjZWNlNzA4MmU3IiwidCI6IjgxYjZjZTg5LWM3YjktNDM2ZC1hN2MzLWQ5N2ZmN2NkM2ZjMiIsImMiOjl9&pageName=ReportSectionaee609fad9a8bacd2a8a"></iframe>
+/*            case 'vehicle-insights':
                 return <p>Nothing to Display</p> */
         }
     }
