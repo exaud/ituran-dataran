@@ -17,18 +17,18 @@
     display: flex;
     align-items: center;
     height: 30px;
-    margin-left: 27px;
+    margin-left: 30px;
 }
 
 .dataran-heading {
     box-sizing: border-box;
     flex: 0 0 auto;
-    font: bold 23px Nunito Sans;
-    color: black;
+    font: 900 28px Nunito Sans;
+    color: #0067dd;
 }
 
 .hover-sidebar{
-    padding-left: 120px;
+    padding-left: 140px;
 }
 
 .navbar-main-container {
@@ -96,7 +96,7 @@
 }
 
 .navbar-notifications-svg-container {
-    display: flex;
+    position: center;
     width: 32px;
     height: 32px;
     color: #abafae;
