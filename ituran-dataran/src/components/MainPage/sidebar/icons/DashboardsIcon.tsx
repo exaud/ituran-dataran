@@ -7,7 +7,7 @@ type Props = {
 function DashboardsIcon( props : Props) {
     return (
       <div className={`${props.className}`}>
-        <svg width="30" height="30" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" x="0" y="0">
+        <svg width="40" height="40" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" x="0" y="0">
           <g id="heroicons-mini/squares-plus" xmlns="http://www.w3.org/2000/svg">
             <g id="Vector_2">
               <path d="M2.4,5.1c0,-1.491 1.2088,-2.7 2.7,-2.7h3c1.4912,0 2.7,1.209 2.7,2.7v3c0,1.491 -1.2088,2.7 -2.7,2.7h-3c-1.4912,0 -2.7,-1.209 -2.7,-2.7z" fill="currentColor" />

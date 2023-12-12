@@ -7,7 +7,7 @@ type Props = {
 function SettingsIcon(props : Props) {
     return (
       <div className={`${props.className}`}>
-        <svg width="30" height="30" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" x="0" y="0">
+        <svg width="40" height="40" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" x="0" y="0">
           <g id="heroicons-mini/cog-8-tooth" xmlns="http://www.w3.org/2000/svg">
             <path
               id="Vector_4"
