@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     height: 30px;
-    margin-left: 30px;
+    margin-left: 60px;
 }
 
 .dataran-heading {
@@ -28,7 +28,7 @@
 }
 
 .hover-sidebar{
-    padding-left: 140px;
+    padding-left: 170px;
 }
 
 .navbar-main-container {
