@@ -30,24 +30,22 @@ function SideBar( props : Props ) : JSX.Element {
                 switch (path[2]) {
                     case 'main-dashboard':
                         return setSubButtonSelected(0)
-                    case 'macro-dashboard':
+                    case 'micro-dashboard':
                         return setSubButtonSelected(1)
-                    case 'vehicle-geo':
+                    case 'macro-dashboard':
                         return setSubButtonSelected(2)
-                    case 'macro-geo':
+                    case 'vehicle-geo':
                         return setSubButtonSelected(3)
+                    case 'macro-geo':
+                        return setSubButtonSelected(4)
                     case 'trip-insights':
-                         return setSubButtonSelected(4)
+                         return setSubButtonSelected(5)
                     case 'safety-events':
-                        return setSubButtonSelected(5)
-                    case 'macro-safety':
                         return setSubButtonSelected(6)
-                    case 'vehicle-distribution':
+                    case 'macro-safety':
                         return setSubButtonSelected(7)
-/*                     case 'daily-insights':
-                            return setSubButtonSelected(7)
-                    case 'vehicle-insights':
-                            return setSubButtonSelected(8) */
+                    case 'vehicle-distribution':
+                        return setSubButtonSelected(8)
                     default:
                 }
                 return
@@ -94,29 +92,29 @@ function SideBar( props : Props ) : JSX.Element {
                                 <Link to="/dashboards/main-dashboard">Main Dashboard</Link>
                             </button>
                             <button className={`sidebar-sub-button ${subButtonSelected === 1 ? " current-sub-option" : ""}`}>
-                                <Link to="/dashboards/macro-dashboard">Macro Dashboard</Link>
+                                <Link to="/dashboards/micro-dashboard">Micro Dashboard</Link>
                             </button>
                             <button className={`sidebar-sub-button ${subButtonSelected === 2 ? " current-sub-option" : ""}`}>
-                                <Link to="/dashboards/vehicle-geo">Vehicle Geo Insights</Link>
+                                <Link to="/dashboards/macro-dashboard">Macro Dashboard</Link>
                             </button>
                             <button className={`sidebar-sub-button ${subButtonSelected === 3 ? " current-sub-option" : ""}`}>
-                                <Link to="/dashboards/macro-geo">Macro Geo Insights</Link>
+                                <Link to="/dashboards/vehicle-geo">Vehicle Geo Insights</Link>
                             </button>
                             <button className={`sidebar-sub-button ${subButtonSelected === 4 ? " current-sub-option" : ""}`}>
-                                <Link to="/dashboards/trip-insights">Trip Insights</Link>
+                                <Link to="/dashboards/macro-geo">Macro Geo Insights</Link>
                             </button>
                             <button className={`sidebar-sub-button ${subButtonSelected === 5 ? " current-sub-option" : ""}`}>
-                                <Link to="/dashboards/safety-events">Safety Events</Link>
+                                <Link to="/dashboards/trip-insights">Trip Insights</Link>
                             </button>
                             <button className={`sidebar-sub-button ${subButtonSelected === 6 ? " current-sub-option" : ""}`}>
+                                <Link to="/dashboards/safety-events">Safety Events</Link>
+                            </button>
+                            <button className={`sidebar-sub-button ${subButtonSelected === 7 ? " current-sub-option" : ""}`}>
                                 <Link to="/dashboards/macro-safety">Macro Safety Events</Link>
                             </button>
-                             <button className={`sidebar-sub-button ${subButtonSelected === 7 ? " current-sub-option" : ""}`}>
+                             <button className={`sidebar-sub-button ${subButtonSelected === 8 ? " current-sub-option" : ""}`}>
                                 <Link to="/dashboards/vehicle-distribution">Vehicle Distribution</Link>
                             </button>
-{/*                            <button className={`sidebar-sub-button ${subButtonSelected === 8 ? " current-sub-option" : ""}`}>
-                                <Link to="/dashboards/vehicle-insights">Vehicle Insights</Link>
-                            </button> */}
                         </div>
                         : null}
                     <button className='sidebar-button'>
