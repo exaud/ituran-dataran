@@ -30,7 +30,7 @@
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
-    padding-top: 30px;
+    padding-top: 10px;
     border-bottom: 1px solid #3492ff;
     width: 100%;
 }
@@ -180,8 +180,7 @@
     display: flex;
     justify-content: flex-start;
     padding-left: 13px;
-    padding-top: 0px;
-    margin-bottom: 54px;
+    margin-bottom: 35px;
     background: none;
     border: none;
 }
@@ -205,6 +204,7 @@
 .sidebar-logo-container {
     display: flex;
     align-items: center;
+    margin-top: -15px;
   }
   
 .sidebar-logo {
