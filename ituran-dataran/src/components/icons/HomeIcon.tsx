@@ -3,7 +3,8 @@ import React from "react";
 type Props = {
   className : string,
 }
-function HomeIcon( props : Props) {
+
+function HomeIcon(props : Props) {
   return (
     <div className={`${props.className}`}>
       <svg width="180" height="130" viewBox="0 0 87 50" fill="none" xmlns="http://www.w3.org/2000/svg">

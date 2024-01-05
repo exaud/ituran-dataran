@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react'
-import './style.css'
-import PasswordLoginIcon from './passwordLoginIcon.png'
+import './PasswordInput.css'
+import PasswordLoginIcon from '../../../icons/passwordLoginIcon.png'
 
 function PasswordInput() : JSX.Element {
 

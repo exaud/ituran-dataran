@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react'
-import './style.css'
-import UserLoginIcon from './userLoginIcon.png'
+import './UserInput.css'
+import UserLoginIcon from '../../../icons/userLoginIcon.png'
 
 
 function UserInput() : JSX.Element {

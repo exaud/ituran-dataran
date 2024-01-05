@@ -1,5 +1,5 @@
 import React from "react";
-import './style.css'
+import './Reports.css'
 
 function Reports() : JSX.Element {
     return (

@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
 import { Button } from '@mui/base'
-import UserInput from '../UserInput'
-import PasswordInput from '../PasswordInput'
-import './style.css'
+import UserInput from './UserInput/UserInput'
+import PasswordInput from './PasswordInput/PasswordInput'
+import './BigDataLogin.style.css'
 
 
 function BigDataLogin() : JSX.Element {
