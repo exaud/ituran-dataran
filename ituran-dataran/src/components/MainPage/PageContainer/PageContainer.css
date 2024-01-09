@@ -1,0 +1,36 @@
+.page-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: white;
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-container {
+    display: inline-block;
+    margin-left: 60px;
+    width: 100%;
+}
+
+.info-container {
+    width: 100%;
+}
+
+
+.chat-bot {
+    position: fixed;
+    bottom: 44px;
+    right: 44px;
+    visibility: hidden;
+}
+
+.chat-bot-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 101.25px;
+    width: 106.05px;
+}

@@ -1,9 +1,9 @@
 import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
-import Home from '../pages/Home/Home';
-import Dashboards from '../pages/Dashboards/Dashboards';
-import Reports from '../pages/Reports/Reports';
-import Settings from '../pages/Settings/Settings';
+import Home from '../Pages/Home/Home';
+import Dashboards from '../Pages/Dashboards/Dashboards';
+import Reports from '../Pages/Reports/Reports';
+import Settings from '../Pages/Settings/Settings';
 import PageContainer from '../PageContainer/PageContainer';
 
 export const router = createBrowserRouter(
