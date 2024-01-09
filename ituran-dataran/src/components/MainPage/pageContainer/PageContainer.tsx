@@ -3,8 +3,8 @@ import { useState } from 'react'
 import ChatBotIcon from '../../icons/ChatBotIcon';
 import './PageContainer.css'
 import { Outlet } from 'react-router';
-import SideBar from '../Sidebar/SideBar';
-import NavBar from '../Navbar/NavBar';
+import SideBar from '../SideBar/SideBar';
+import NavBar from '../NavBar/NavBar';
 
 
 function PageContainer() : JSX.Element {
