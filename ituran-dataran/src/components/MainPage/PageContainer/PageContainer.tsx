@@ -1,10 +1,10 @@
 import React from 'react';
 import { useState } from 'react'
-import NavBar from '../navbar';
-import SideBar from '../sidebar';
-import ChatBotIcon from './icons/ChatBotIcon';
-import './style.css'
+import ChatBotIcon from '../../icons/ChatBotIcon';
+import './PageContainer.css'
 import { Outlet } from 'react-router';
+import NavBar from '../NavBar/NavBar';
+import SideBar from "../SideBar/SideBar";
 
 
 function PageContainer() : JSX.Element {

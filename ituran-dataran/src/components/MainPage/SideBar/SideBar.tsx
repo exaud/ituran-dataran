@@ -1,13 +1,13 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 // @ts-ignore
-import HomeIcon from './icons/HomeIcon'
-import LogoSmall from './icons/LogoSmall'
-import DashboardsIcon from './icons/DashboardsIcon'
-import ReportsIcon from './icons/ReportsIcon'
-import SettingsIcon from './icons/SettingsIcon'
+import HomeIcon from '../../icons/HomeIcon'
+import LogoSmall from '../../icons/Logo/LogoSmall'
+import DashboardsIcon from '../../icons/DashboardsIcon'
+import ReportsIcon from '../../icons/ReportsIcon'
+import SettingsIcon from '../../icons/SettingsIcon'
 import { Link, useLocation } from 'react-router-dom'
-import './style.css'
+import './SideBar.css'
 
 type Props = {
     hoveringSidebar : any,

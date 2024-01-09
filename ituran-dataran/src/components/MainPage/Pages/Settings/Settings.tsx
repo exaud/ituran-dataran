@@ -1,5 +1,5 @@
 import React from "react";
-import './style.css'    
+import './Settings.css'    
 
 function Settings() : JSX.Element {
     return (

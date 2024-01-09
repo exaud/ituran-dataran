@@ -1,7 +1,7 @@
 import React from 'react';
-import ImageContainer from '../ImageContainer'
-import Logo from './Logo'
-import './style.css'
+import LoginImageContainer from '../LoginImageContainer/LoginImageContainer'
+import Logo from '../../icons/Logo/Logo'
+import './HeroSection.css'
 
 function HeroSection() : JSX.Element {
   return (
@@ -12,7 +12,7 @@ function HeroSection() : JSX.Element {
           </div>
           <p className={`loginpage-dataran-heading`}>Dataran</p>
         </div>
-      <ImageContainer />
+      <LoginImageContainer />
     </div>
   );
 }

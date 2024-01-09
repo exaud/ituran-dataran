@@ -1,10 +1,10 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import { Input } from '@mui/base'
-import NotificationsIcon from './icons/NotificationsIcon'
-import UKFlagIcon from './icons/UKFlagIcon'
-import LanguageDropdownIcon from './icons/LanguageDropdownIcon'
-import './style.css'
+import NotificationsIcon from '../../icons/NotificationsIcon'
+import UKFlagIcon from '../../icons/flags/UKFlagIcon'
+import LanguageDropdownIcon from '../../icons/LanguageDropdownIcon'
+import './NavBar.css'
 
 type Props = {
   hoveringSidebar : boolean,

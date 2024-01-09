@@ -57,7 +57,7 @@
     flex: 1 0 auto;
     flex-direction: row;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     max-width: 202px;
     height: 45px;
     border-bottom: 1px solid #00a8e3;
