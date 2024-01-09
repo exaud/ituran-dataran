@@ -96,4 +96,5 @@ function NavBar(props : Props) : JSX.Element {
     </div>
   );
 }
+
 export default NavBar

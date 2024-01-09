@@ -148,4 +148,5 @@ function SideBar( props : Props ) : JSX.Element {
         </div >
     );
 }
+
 export default SideBar
