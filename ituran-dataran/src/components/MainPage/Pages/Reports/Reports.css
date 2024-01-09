@@ -5,3 +5,51 @@
     flex: 0 0 auto;
     flex-direction: column;
 }
+
+.reports-page-heading-container{
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.reports-page-heading{
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    font: 700 20px Nunito Sans;
+    color: black;
+    align-self: end;
+}
+
+.reports-page-body-container{
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reports-page-metrics-container{
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: Left;
+}
+
+.new-report-button {
+    box-sizing: border-box;
+    display: block;
+    flex: 0 0 auto;
+    width: 139px;
+    height: 36px;
+    font: 600 15px Inter;
+    color: white;
+    cursor: pointer;
+    background: #3c83f6;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
